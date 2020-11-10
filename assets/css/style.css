@@ -16,7 +16,7 @@ body{font-family:Mont, sans-serif;color:#333;font-size: 15px;}
 .form-control { height: initial; padding: .6rem .85rem; }
 a{color:#5846f9}
 a:hover{color:#8577fb;text-decoration:none}
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 { font-weight: initial; }
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 { font-weight: initial; color: #000; }
 h1,h2,h3,h4,h5,h6{font-family:MontBold,sans-serif}
 .rounded-lg{border-radius:2rem!important}
 #hero .hero-img{text-align:center}
@@ -386,19 +386,23 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
 	background-size: contain; background-position-x: -120px;
 	display: flex; align-items: center;
  }
- .subscribers input, .contact .contactForm input, .contact .contactForm textarea { border-radius: 20px; border: none; background-color: #fff; }
- .help_center .card { border-radius: 20px; background-color: #858cf1; display: flex; justify-content: center; }
- .help_center .card-body { display: flex; flex-direction: column; justify-content: space-between; }
- .help_center .help_illustration { text-align: center; margin-top: -127px; padding-bottom: 20px; }
- .contact .contactForm { background-color: #f5f5fa; border-radius: 20px; box-shadow: initial; }
- .btn-subscribe { border: none; padding: 15px 10px; }
- .btn-secondary { background-color: #858cf1; }
- .base_color { color: #858cf1 !important; }
- #hero.pricing-hero h1 { font-size: 40px; line-height: 46px; }
- #hero.pricing-hero .hero-img:before { content:  unset !important; }
- .pricing-hero .container-fluid:before { content: ''; background: url(../img/obj1.png) right center no-repeat; position: absolute;right: 0;top: -250px;z-index: 5;width: 173px;height: 100%;}
- .pricing-hero .container-fluid:after { content: ''; background: url(../img/obj2.png) right center no-repeat; position: absolute;left: 0;top: -210px;z-index: 5;width: 173px;height: 100%;}
- .invoicing-hero .container-fluid:before { content: ''; background: url(../img/lamp.png) right center no-repeat; position: absolute;right: 0;top: 0;z-index: 5;width: 150px;height: 115px;}
- .invoicing-hero .container-fluid:after { content: ''; background: url(../img/chart2.png) right center no-repeat; position: absolute;left: 0;top: -210px;z-index: 5;width: 173px;height: 100%;}
- #hero.invoicing-hero:before { content: unset !important; }
- #hero.invoicing-hero { height: auto; background: url(../img/invoicing_bg.png) no-repeat; background-size: contain; }
+.subscribers input, .contact .contactForm input, .contact .contactForm textarea { border-radius: 20px; border: none; background-color: #fff; }
+.help_center .card { border-radius: 20px; background-color: #858cf1; display: flex; justify-content: center; }
+.help_center .card-body { display: flex; flex-direction: column; justify-content: space-between; }
+.help_center .help_illustration { text-align: center; margin-top: -127px; padding-bottom: 20px; }
+.contact .contactForm { background-color: #f5f5fa; border-radius: 20px; box-shadow: initial; }
+.btn-subscribe { border: none; padding: 15px 10px; }
+.btn-secondary { background-color: #858cf1; }
+.base_color { color: #858cf1 !important; }
+#hero.pricing-hero h1 { font-size: 40px; line-height: 46px; }
+#hero.pricing-hero .hero-img:before { content:  unset !important; }
+.pricing-hero .container-fluid:before { content: ''; background: url(../img/obj1.png) right center no-repeat; position: absolute;right: 0;top: -250px;z-index: 5;width: 173px;height: 100%;}
+.pricing-hero .container-fluid:after { content: ''; background: url(../img/obj2.png) right center no-repeat; position: absolute;left: 0;top: -210px;z-index: 5;width: 173px;height: 100%;}
+.invoicing-hero .container-fluid:before { content: ''; background: url(../img/lamp.png) right center no-repeat; position: absolute;right: 0;top: 0;z-index: 5;width: 150px;height: 115px;}
+.invoicing-hero .container-fluid:after { content: ''; background: url(../img/chart2.png) right center no-repeat; position: absolute;left: 0;top: -210px;z-index: 5;width: 173px;height: 100%;}
+#hero.invoicing-hero:before { content: unset !important; }
+#hero.invoicing-hero { height: auto; background: url(../img/invoicing_bg.png) no-repeat; background-size: contain; }
+.invoices_mailing { position: relative; overflow: visible; margin-bottom: 100px; }
+.invoices_mailing .card { border-radius: 36px; background: #F6F6F6; border: none; }
+.invoices_mailing .card:before { content: ''; background: url(../img/envelope.png) left center no-repeat; background-size: contain; position: absolute;left: -100px;top: 40%; z-index: 5;width: 180px;height: 120px; }
+.invoices_mailing .card:after { content: ''; background: url(../img/point.png) center center no-repeat; background-size: contain; position: absolute;right: 100px;top: -25px; z-index: 5;width: 50px;height: 50px; }
