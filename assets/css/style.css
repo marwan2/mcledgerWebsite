@@ -406,3 +406,21 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
 .invoices_mailing .card { border-radius: 36px; background: #F6F6F6; border: none; }
 .invoices_mailing .card:before { content: ''; background: url(../img/envelope.png) left center no-repeat; background-size: contain; position: absolute;left: -100px;top: 40%; z-index: 5;width: 180px;height: 120px; }
 .invoices_mailing .card:after { content: ''; background: url(../img/point.png) center center no-repeat; background-size: contain; position: absolute;right: 100px;top: -25px; z-index: 5;width: 50px;height: 50px; }
+#hero.about-hero { background: #fff; }
+#hero.about-hero .hero-img:before, #hero.about-hero:before { content: unset; }
+.statistics_cards h1 { font-size: 65px; font-family: MontBold; }
+.statistics_cards p { font-size: 14px; }
+.statistics_cards .card { border-radius: 30px; border: none; color: #858cf1; transition: 0.2s;
+background: rgb(242,243,255);
+background: -moz-linear-gradient(270deg, rgba(242,243,255,1) 0%, rgba(249,249,252,1) 100%);
+background: -webkit-linear-gradient(270deg, rgba(242,243,255,1) 0%, rgba(249,249,252,1) 100%);
+background: linear-gradient(270deg, rgba(242,243,255,1) 0%, rgba(249,249,252,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f2f3ff",endColorstr="#f9f9fc",GradientType=1); }
+.statistics_cards .card:hover { background: #858cf1; color: #fff; }
+.statistics_cards .card:hover .gradient { background: none; color: #fff; background-clip: unset; -webkit-text-fill-color: unset; }
+.statistics_cards .card-body { text-align: center; padding:35px 10px;  }
+.gradient { color: unset; background: -moz-linear-gradient(top, #24d9c4 0%, #b083f9 100%); background: -webkit-linear-gradient(top, #24d9c4 0%, #b083f9 100%); background: linear-gradient(to bottom, #24d9c4 0%, #b083f9 100%); background-clip: border-box; -webkit-background-clip: text; -moz-background-clip: text;background-clip: text; -webkit-text-fill-color: transparent;}
+.business_cards .stat_col { margin-bottom: 20px; }
+.business_cards .card-body { padding: 20px 20px 25px; min-height: 180px; display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; }
+.business_cards .bs_img { display: flex; align-self: end; }
+.business_cards .business_type { display: flex; align-self: start; color: #000; text-align: left; }
