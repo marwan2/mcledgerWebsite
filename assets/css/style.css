@@ -424,3 +424,22 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f2f3ff",endCo
 .business_cards .card-body { padding: 20px 20px 25px; min-height: 180px; display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; }
 .business_cards .bs_img { display: flex; align-self: end; }
 .business_cards .business_type { display: flex; align-self: start; color: #000; text-align: left; }
+.compare_table .compare_cols ul { background: #fff; border-radius: 20px; }
+.compare_table .compare_items ul, .compare_table .compare_cols ul { padding: 20px 0 20px;	 margin: 0; }
+.compare_table .compare_items ul li, .compare_table .compare_cols ul li { height: 50px; margin: 0; padding: 0px 5px; list-style-type: none; margin-bottom: 10px; display: flex; justify-content: center; align-items: center }
+.compare_table .compare_items ul li { background: #fff; border-top-left-radius: 20px; border-bottom-left-radius: 20px;  text-align: left; justify-content: start; padding-left: 10px; }
+.compare_table .compare_items ul li.header { background-color: transparent; }
+.compare_table .compare_cols ul li.header { font-family: MontBold; }
+.compare_table .compare_cols ul li { text-align: center; }
+.compare_table li .checked, .compare_table li .unchecked { font-size: 24px; width: 31px; height: 31px; text-align: center; padding-top: 3px; border-radius: 50%; }
+.compare_table li .checked { background-color: #6b84ff; color: #fff; }
+.compare_table li .unchecked { background-color: #e0e0e0; color: #666; }
+.compare_table .mc_col li .checked, .compare_table .mc_col li .unchecked { background-color: #fff; color: #11ccff; }
+.compare_table .mc_col { color: #fff;  }
+.bg, .mc_col {
+	background: rgb(19,204,246) !important;
+	background: -moz-linear-gradient(168deg, #767cff 8%, #11ccff 56%, #01f2e7 99%) !important;
+	background: -webkit-linear-gradient(168deg, #767cff 8%, #11ccff 56%, #01f2e7 99%) !important;
+	background: linear-gradient(168deg, #767cff 8%, #11ccff 56%, #01f2e7 99%) !important;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#13ccf6",endColorstr="#ab7fe8",GradientType=1);
+}
