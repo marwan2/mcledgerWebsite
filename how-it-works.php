@@ -57,15 +57,15 @@
          <div class="container-fluid">
             <div class="row justify-content-center">
                <div class="col-xl-9 d-flex align-items-center">
-                  <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+                  <a href="index.php" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
                   <nav class="nav-menu d-none d-lg-block">
                      <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li class="active"><a href="how-it-works.html">How It Work</a></li>
-                        <li><a href="invoicing.html">Invoicing</a></li>
-                        <li><a href="pricing.html">Pricing</a></li>
-                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="about.php">About Us</a></li>
+                        <li class="active"><a href="how-it-works.php">How It Work</a></li>
+                        <li><a href="invoicing.php">Invoicing</a></li>
+                        <li><a href="pricing.php">Pricing</a></li>
+                        <li><a href="blog.php">Blog</a></li>
                      </ul>
                   </nav>
                   <a href="/login" class="get-started-btn btn rad scrollto">Login</a>

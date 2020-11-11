@@ -21,15 +21,15 @@
          <div class="container-fluid">
             <div class="row justify-content-center">
                <div class="col-xl-9 d-flex align-items-center">
-                  <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+                  <a href="index.php" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
                   <nav class="nav-menu d-none d-lg-block">
                      <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="how-it-works.html">How It Work</a></li>
-                        <li><a href="invoicing.html">Invoicing</a></li>
-                        <li><a href="pricing.html">Pricing</a></li>
-                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="about.php">About Us</a></li>
+                        <li><a href="how-it-works.php">How It Work</a></li>
+                        <li><a href="invoicing.php">Invoicing</a></li>
+                        <li><a href="pricing.php">Pricing</a></li>
+                        <li><a href="blog.php">Blog</a></li>
                      </ul>
                   </nav>
                   <a href="/login" class="get-started-btn btn rad scrollto">Login</a>
@@ -58,8 +58,8 @@
          <section class="contact">
             <div class="container">
                <div class="row" style="flex: 1">
-                  <div class="col-md-6">
-                     <form action="forms/contact.php" method="post" role="form" class="php-email-form contactForm">
+                  <div class="col-md-7">
+                     <form action="forms/contact.php" method="post" role="form" class="php-email-form contactForm h-100">
                         <h3>Contact Us</h3>
                         <div class="form-row">
                            <div class="col-md-6 form-group">
@@ -88,7 +88,7 @@
                      </form>
                   </div>
                   <div class="col-md-1 d-flex align-items-center justify-content-center">OR</div>
-                  <div class="col-md-5">
+                  <div class="col-md-4">
                      <div class="row d-flex" style="flex: 1">
                         <div class="col-lg-12 help_center d-flex text-center text-white mb-4">
                            <div class="card">
@@ -111,7 +111,7 @@
                                  </div>
                               </div>
                               <div class="col-md-12">
-                                 <div class="info-box mb-4">
+                                 <div class="info-box mb-0">
                                     <i class="bx bx-phone-call"></i>
                                     <p>+971 533 188 199</p>
                                  </div>

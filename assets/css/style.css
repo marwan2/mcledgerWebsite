@@ -54,8 +54,8 @@ h1,h2,h3,h4,h5,h6{font-family:MontBold,sans-serif}
 .nav-menu > ul{display:flex}
 .nav-menu > ul > li{position:relative;white-space:nowrap;padding:10px 0 10px 24px}
 .nav-menu a{display:block;position:relative;color:rgba(0,0,0,0.7);transition:.3s;font-size:14px;padding:0 3px;text-transform: uppercase;}
-.nav-menu > ul > li > a:before{content:"";position:absolute;width:100%;height:2px;bottom:-5px;left:0;background-color:#03eeea;visibility:hidden;width:0;transition:all .3s ease-in-out 0}
-.nav-menu a:hover:before,.nav-menu li:hover > a:before,.nav-menu .active > a:before{visibility:visible;width:100%}
+.nav-menu > ul > li > a:before{content:"";position:absolute;width:100%;height:8px; border-radius: 10px; bottom:-15px;left:0;right:0;background-color:#03eeea;visibility:hidden;transition:all .3s ease-in-out;width:0; margin: 0 auto;}
+.nav-menu a:hover:before,.nav-menu li:hover > a:before,.nav-menu .active > a:before{visibility:visible;width:80%}
 .nav-menu a:hover,.nav-menu .active > a,.nav-menu li:hover > a{color:#000}
 .nav-menu .drop-down ul{display:block;position:absolute;left:22px;top:calc(100% + 30px);z-index:99;opacity:0;visibility:hidden;padding:10px 0;background:#fff;box-shadow:0 0 30px rgba(127,137,161,0.25);transition:.3s}
 .nav-menu .drop-down:hover > ul{opacity:1;top:100%;visibility:visible}
@@ -94,7 +94,7 @@ h1,h2,h3,h4,h5,h6{font-family:MontBold,sans-serif}
 .mobile-nav-active .mobile-nav-toggle i{color:#fff}
 #hero{width:100%;height:100vh;background:url(../img/bg.png) center top no-repeat;background-size:contain;}
 #hero .container,#hero .container-fluid{padding-top:34px}
-#hero h1{margin:0;font-size:52px;font-family: MontBold;line-height:64px;color:#000}
+#hero h1{margin:0;font-size:48px;font-family: MontBold;line-height:64px;color:#000}
 #hero h2{color:rgba(0,0,0,0.8);margin:10px 0 0;font-size:17px}
 #hero .btn-get-started{;font-weight:500;font-size:16px;display:inline-block;padding:10px 28px;transition:.5s;margin-top:10px;color:#fff;border:1px solid rgba(255,255,255,0.1)}
 #hero .btn-get-started:hover{background:#fff;color:#5846f9}
@@ -436,7 +436,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f2f3ff",endCo
 .compare_table li .unchecked { background-color: #e0e0e0; color: #666; }
 .compare_table .mc_col li .checked, .compare_table .mc_col li .unchecked { background-color: #fff; color: #11ccff; }
 .compare_table .mc_col { color: #fff;  }
-.bg, .mc_col {
+.bg, .mc_col, .nav-menu .active > a:before {
 	background: rgb(19,204,246) !important;
 	background: -moz-linear-gradient(168deg, #767cff 8%, #11ccff 56%, #01f2e7 99%) !important;
 	background: -webkit-linear-gradient(168deg, #767cff 8%, #11ccff 56%, #01f2e7 99%) !important;

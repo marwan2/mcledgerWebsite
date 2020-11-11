@@ -25,16 +25,16 @@
     <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-xl-9 d-flex align-items-center">
-          <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+          <a href="index.php" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
 
           <nav class="nav-menu d-none d-lg-block">
             <ul>
-              <li class="active"><a href="index.html">Home</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="how-it-works.html">How It Work</a></li>
-              <li><a href="invoicing.html">Invoicing</a></li>
-              <li><a href="pricing.html">Pricing</a></li>
-              <li><a href="blog.html">Blog</a></li>
+              <li class="active"><a href="index.php">Home</a></li>
+              <li><a href="about.php">About Us</a></li>
+              <li><a href="how-it-works.php">How It Work</a></li>
+              <li><a href="invoicing.php">Invoicing</a></li>
+              <li><a href="pricing.php">Pricing</a></li>
+              <li><a href="blog.php">Blog</a></li>
             </ul>
           </nav>
           <a href="/login" class="get-started-btn btn rad scrollto">Login</a>
@@ -320,7 +320,7 @@
 
     <section id="bankIntegration" class="bankIntegration mb-0 pb-0">
       <div class="container">
-        <div class="row d-flex justify-content-end mb-0">
+        <div class="row d-flex justify-content-end mb-0" data-aos="slide-up" data-aos-delay="100">
           <div class="col-md-5" style="margin-top: 100px; margin-bottom: 100px;">
             <h2 class="mb-4">Linking Your bank accounts and credit cards</h2>
             <p class="pb-5">
@@ -336,7 +336,7 @@
         <div class="card" style="border-radius: 36px; background-color: #eff0ff; border: none;">
           <div class="card-body" style="padding: 60px 40px">
             <div class="row d-flex justify-content-between align-items-center">
-              <div class="col-md-6">
+              <div class="col-md-6" data-aos="slide-up" data-aos-delay="100">
                 <h3 class="mb-4">
                   Made it super easy for you to connect your accounts.
                 </h3>
@@ -344,7 +344,7 @@
                   Once you’re connected, you can process payments, Pay on time, detects due dates and schedules your payment for the right date.
                 </p>
               </div>
-              <div class="col-md-5">
+              <div class="col-md-5" data-aos="slide-up" data-aos-delay="100">
                 <img src="assets/img/payments.png" class="mw-100" alt="Cash-MasterCard-ApplePay">
               </div>
             </div>
@@ -354,7 +354,7 @@
     </section>
 
 
-    <section id="subscribers" class="subscribers">
+    <section id="subscribers" class="subscribers" data-aos="slide-up" data-aos-delay="100">
       <div class="container">
         <div class="row">
           <div class="col-md-8" style="background: url(assets/img/flying_envelope.png) center center no-repeat">
@@ -387,14 +387,11 @@
       </div>
     </section>
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact ">
+    <section id="contact" class="contact" data-aos="slide-up" data-aos-delay="100">
       <div class="container" data-aos="fade-up">
-
         <div class="section-title">
           <h2>Contact</h2>
         </div>
-
         <div class="row d-flex" style="flex: 1">
           <div class="col-lg-8 d-flex flex-column">
             <div class="row">
@@ -461,7 +458,7 @@
     </section>
   </main>
 
-  <footer id="footer">
+  <footer id="footer" data-aos="slide-up" data-aos-delay="100">
     <div class="footer-top">
       <div class="container">
         <div class="row">
@@ -498,7 +495,7 @@
                   <li><i class="bx bx-chevron-right"></i> <a href="#">How is works?</a></li>
                   <li><i class="bx bx-chevron-right"></i> <a href="#">Why us?</a></li>
                   <li><i class="bx bx-chevron-right"></i> <a href="#">FAQ</a></li>
-                  <li><i class="bx bx-chevron-right"></i> <a href="#">Contact Us</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="contact-us.php">Contact Us</a></li>
                 </ul>
               </div>
               <div class="col-lg-3 col-md-6 footer-links">
