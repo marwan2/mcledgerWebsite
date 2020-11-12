@@ -91,12 +91,12 @@
       <main id="main">
          <section class="about_block">
             <div class="container">
-               <div class="_row" style="overflow: visible; display: flex; align-content: center; border-radius: 30px; background-color: #f4f5f7; height: 415px; margin-bottom: 60px; width: 100%;">
+               <div class="_row" style="overflow: visible; display: flex; align-content: center; border-radius: 30px; background-color: #f4f5f7; height: 410px; margin-bottom: 60px; width: 100%;">
                   <div class="col-md-6" style="height: 100%">
                      <img src="assets/img/app_auth.png" class="mw-100" alt="..." style="margin-bottom: 0;padding-top: 0;position: absolute;bottom: 30px;left: -75px;" data-aos="slide-up" data-aos-delay="120">
                   </div>
                   <div class="col-md-6 d-flex flex-column justify-content-center">
-                     <ul class="reg_steps">
+                     <ol class="reg_steps">
                         <li data-aos="slide-up" data-aos-delay="120">
                            <h3>Register</h3>
                            <p>Give us a call or register online</p>
@@ -109,19 +109,16 @@
                            <h3>Activate business</h3>
                            <p>Each business is reviewed individually and activated accordingly</p>
                         </li>
-                     </ul>
+                     </ol>
                   </div>
                </div>
                <div class="card" style="overflow: visible; border-radius: 30px; background-color: #f4f5f7; margin-bottom: 60px; width: 100%; border: none;">
-                  <div class="card-body">
+                  <div class="card-body p-5" data-aos="slide-up" data-aos-delay="100">
                      <div class="row">
                         <div class="col-md-6">
-                           <ul class="reg_steps">
-                              <li data-aos="slide-up" data-aos-delay="120">
-                                 <h4>Snap, receive, post are 3 steps that is an ongoing cycle </h4>
-                                 <p class="mb-3">
-                                    Give us a call or register online
-                                 </p>
+                           <ol class="reg_steps">
+                              <li data-aos="slide-up" data-aos-delay="120" class="st4">
+                                 <h4 class="mb-3">Snap, receive, post are 3 steps that is an ongoing cycle </h4>
                                  <div class="step_inner mb-4">
                                     <h5>Snap</h5>
                                     <p>Your invoices and receipts</p>
@@ -138,20 +135,20 @@
                            </ul>
                         </div>
                         <div class="col-md-6" >
-                           <img src="assets/img/app_preview.png" alt="" class="mw-100" style="position: absolute; bottom: -120px;">
+                           <img src="assets/img/app_preview.png" alt="" class="mw-100" style="position: absolute; bottom: -140px;">
                         </div>
                      </div>
                   </div>
                </div>
             </div>
          </section>
-         <section>
-            <div class="container">
+         <section class="features_table">
+            <div class="container" data-aos="slide-up" data-aos-delay="120">
                <div class="row">
                   <div class="col-md-12">
-                     <h1 class="text-center mb-5">Why McLedger?</h1>
-                     <div class="card compare_table" style="border-radius: 30px; background-color: #f4f5f7; padding: 30px; border: none;">
+                     <div class="card compare_table">
                         <div class="card-body">
+                           <h2 class="text-center mb-5">Why McLedger?</h2>
                            <div class="row">
                               <div class="col-md-5 pr-0 compare_items">
                                  <ul>
@@ -172,7 +169,6 @@
                                           <?php endforeach; ?>
                                        </ul>
                                     </div>
-
                                     <div class="col-md-3">
                                        <ul>
                                           <li class="header">In-House</li>
@@ -181,7 +177,6 @@
                                           <?php endforeach; ?>
                                        </ul>
                                     </div>
-
                                     <div class="col-md-3">
                                        <ul>
                                           <li class="header">Freelance</li>
@@ -190,7 +185,6 @@
                                           <?php endforeach; ?>
                                        </ul>
                                     </div>
-
                                     <div class="col-md-3">
                                        <ul>
                                           <li class="header">Outsourcing</li>

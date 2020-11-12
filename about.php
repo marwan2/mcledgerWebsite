@@ -94,7 +94,7 @@
             </div>
           </div>
           <div class="col-md-4 stat_col">
-            <div class="card" data-aos="slide-up" data-aos-delay="120">
+            <div class="card active" data-aos="slide-up" data-aos-delay="120">
               <div class="card-body">
                 <h1 class="gradient">1M+</h1>
                 <p># of Transitions processed</p>
@@ -182,13 +182,13 @@
     <section>
       <div class="container">
         <div class="row d-flex justify-content-between align-items-center">
-          <div class="col-md-5">
+          <div class="col-md-5" data-aos="slide-up" data-aos-delay="100">
             <h3>Our Mission</h3>
             <p>
               To provide best online bookkeeping solution, unbeatable accuracy and timely services through a sophisticated and user-friendly mobile and web application.
             </p>
           </div>
-          <div class="col-md-7">
+          <div class="col-md-7" data-aos="slide-up" data-aos-delay="110">
               <img src="assets/img/mission.png" class="mw-100">
           </div>
         </div>

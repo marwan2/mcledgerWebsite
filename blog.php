@@ -37,16 +37,16 @@
       </div>
     </div>
   </header>
-  <section id="hero" class="d-flex align-items-center about-hero">
-    <div style="width: 50%; height: 80vh; position: absolute; top: 0; right:0; background-color: #eff0ff; border-bottom-left-radius: 50px; z-index: 2; content: ''"></div>
+  <section id="hero" class="d-flex align-items-center about-hero" style="height: 60vh;">
+    <div style="width: 50%; height: 60vh; position: absolute; top: 0; right:0; background-color: #edffff; border-bottom-left-radius: 50px; z-index: 2; content: ''"></div>
     <div class="container" data-aos="fade-up" style="z-index: 3;">
       <div class="row justify-content-center pt-5">
         <div class="col-lg-7 order-2 order-lg-2 hero-img p-5" data-aos="zoom-in" data-aos-delay="150">
-          <img src="assets/img/about_hero.png" class="animated mw-100" alt="">
+          <img src="assets/img/blog_hero.png" class="animated mw-100" alt="">
         </div>
         <div class="col-lg-5 pt-3 pt-lg-0 order-1 order-lg-1 d-flex flex-column justify-content-center">
-          <h2 class="mb-0">Blog</h2>
-          <h1 class="mb-5">Find Out McLedger announcements, News, tips and tricks</h1>
+          <p class="mb-2">Blog</p>
+          <h3 class="mb-5">Find Out McLedger announcements, News, tips and tricks</h3>
         </div>
       </div>
     </div>
@@ -62,19 +62,17 @@
             <a href="#" class="btn btn-light base_color mr-2">VAT</a>
           </div>
           <div class="col-md-3">
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="btnSearch">
+            <div class="input-group blog_search">
+              <input type="text" class="form-control" placeholder="Search articles" aria-label="Search" aria-describedby="btnSearch">
               <div class="input-group-append">
-                <button class="btn btn-outline-primary" type="button" id="btnSearch">
-                  <i class="bx bx-search"></i>
-                </button>
+                <button class="btn btn-outline-primary" type="button" id="btnSearch"><i class="bx bx-search"></i></button>
               </div>
             </div>
           </div>
         </div>
         <div class="row mt-5">
           <div class="col-md-6">
-            <div class="card border-0 rad p-3" style="border-radius: 30px; background-color: #F3F3F5">
+            <div class="card border-0 rad p-3 blog_card">
               <a href="blog-details.php"><img src="assets/img/requests-2.png" class="card-img-top" alt="..."></a>
               <div class="card-body">
                 <div class="post_tags mb-3">
@@ -90,14 +88,14 @@
             </div>
           </div>
           <div class="col-md-6">
-            <div class="card border-0 rad p-3" style="border-radius: 30px; background-color: #F3F3F5">
+            <div class="card border-0 rad p-3 blog_card">
               <a href="blog-details.php"><img src="assets/img/requests-2.png" class="card-img-top" alt="..."></a>
               <div class="card-body">
                 <div class="post_tags mb-3">
-                  <div class="btn btn-light bg-white">Industry News</div>
-                  <div class="btn btn-light bg-white">13 June 2020</div>
+                  <div class="btn btn-light btn-sm bg-white">Industry News</div>
+                  <div class="btn btn-light btn-sm bg-white">13 June 2020</div>
                 </div>
-                <h5 class="card-title">Important Update On ESR</h5>
+                <a href="#"><h5 class="card-title">Important Update On ESR</h5></a>
                 <p class="card-text">
                   The new amendment in Economic Substance Regulations comes with some significant changes.
                 </p>

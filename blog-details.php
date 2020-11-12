@@ -37,8 +37,8 @@
       </div>
     </div>
   </header>
-  <section id="hero" class="d-flex align-items-center about-hero">
-    <div style="width: 50%; height: 80vh; position: absolute; top: 0; right:0; background-color: #eff0ff; border-bottom-left-radius: 50px; z-index: 2; content: ''"></div>
+  <section id="hero" class="d-flex align-items-center about-hero" style="height: 60vh">
+    <div style="width: 50%; height: 60vh; position: absolute; top: 0; right:0; background-color: #eff0ff; border-bottom-left-radius: 50px; z-index: 2; content: ''"></div>
     <div class="container" data-aos="fade-up" style="z-index: 3;">
       <div class="row justify-content-center pt-5">
         <div class="col-lg-6 order-2 order-lg-2 hero-img p-5" data-aos="zoom-in" data-aos-delay="150">

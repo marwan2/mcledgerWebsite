@@ -51,10 +51,10 @@
         </div>
         <div class="col-xl-4 col-lg-4 pt-3 pt-lg-0 order-2 order-lg-2 d-flex flex-column justify-content-center">
           <h1>BookKeeping <br>Simplified</h1>
-          <h2 class="mb-5">The perfect FinTech app for micro and small businesses in the UAE</h2>
+          <p class="mb-5">The perfect FinTech app for micro and small businesses in the UAE</p>
           <div class="badge badge-light bg-white text-left mb-1 rounded-lg">Save up to 
             <span class="text-info">85%</span> of your accounting cost Today!</div>
-          <div><a href="#about" class="btn-get-started btn rad scrollto">START TRIAL FOR FREE</a></div>
+          <div><a href="#about" class="btn-get-started btn rad scrollto font-weight-bold">START TRIAL FOR FREE</a></div>
         </div>
       </div>
     </div>
@@ -69,7 +69,7 @@
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
             <h3>Your Mobile Accounting Department</h3>
-            <p class="mb-3">
+            <p class="mb-5">
               The ultimate AI solution with a touch of expert accountants.
               <br><br>
               Be it working in the office or remotely from anywhere - we are built on the foundations of adaptability and flexibility.
@@ -161,7 +161,7 @@
             <div class="media">
               <img src="assets/img/point.png" class="mr-2 mt-2" alt="...">
               <div class="media-body">
-                <h3 class="mt-0 mb-3 text-dark">Tax and financial reports</h3>
+                <h3 class="mt-0 mb-3 text-dark">Tax and Financial Reports</h3>
                 We assure quality reports along with your VAT filing. You can view detailed financial reports that carefully pass through various checkpoints before it reaches you for approval on the application.
               </div>
               <img src="assets/img/devices.png" class="ml-2 mw-100" alt="...">
@@ -174,7 +174,7 @@
               <img src="assets/img/categorized_trans.png" class="ml-2 mw-100" alt="...">
               <img src="assets/img/point.png" class="mr-2 mt-2" alt="...">
               <div class="media-body">
-                <h3 class="mt-0 mb-3 text-dark">Categorized transactions</h3>
+                <h3 class="mt-0 mb-3 text-dark">Categorized Transactions</h3>
                 All your transactions are categorized and you receive instant status updates so that you can easily monitor the progress of your accountants.
               </div>
             </div>
@@ -191,7 +191,7 @@
               <div class="card rounded-lg p-4">
                 <img src="assets/img/conversion.png" class="" alt="...">
                 <div class="card-body">
-                  <h4 class="card-title">Quick communication</h4>
+                  <h4 class="card-title">Quick Communication</h4>
                   <p class="card-text">
                     We have an in-app messaging option so that you can communicate with the accountants. No need to call and wait for long response time. Just drop a message about your concerns and we will get back to you in an instant.
                   </p>
@@ -204,7 +204,7 @@
               <div class="card rounded-lg p-4">
                 <img src="assets/img/notifications.png" class="" alt="...">
                 <div class="card-body">
-                  <h4 class="card-title">Live alerts & notifications</h4>
+                  <h4 class="card-title">Live Alerts & Notifications</h4>
                   <p class="card-text">
                     Never miss a piece of important information when it comes to accounting. The notifications will keep you updated.
                     <br>&nbsp;
@@ -315,7 +315,7 @@
             </div>
           </div>
         </div>
-      </section><!-- End Testimonials Section -->
+      </section>
     </section>
 
     <section id="bankIntegration" class="bankIntegration mb-0 pb-0">
