@@ -234,7 +234,7 @@ section{padding:100px 0;overflow:hidden}
 .faq .faq-list ul{padding:0;list-style:none}
 .faq .faq-list li + li{margin-top:15px}
 .faq .faq-list li{padding:5px;background:#fff;border-radius:20px;position:relative}
-.faq .faq-list a{display:block;position:relative;font-family:"MontBold",sans-serif;font-size:16px;line-height:24px;font-weight:500;padding:20px 30px;outline:none}
+.faq .faq-list a{display:block;position:relative;font-family:"MontBold",sans-serif;font-size:17px;line-height:24px;font-weight:500;padding:20px 30px;outline:none}
 .faq .faq-list .icon-help{font-size:24px;position:absolute;right:0;left:20px;color:#8577fb}
 .faq .faq-list .icon-show,.faq .faq-list .icon-close{font-size:34px;position:absolute;right:10px;top:17px; color: #c0c0c0}
 .faq .faq-list p{margin-bottom:0;padding:10px 30px}
@@ -243,6 +243,8 @@ section{padding:100px 0;overflow:hidden}
 .faq .faq-list a.collapsed:hover{color:#5846f9}
 .faq .faq-list a.collapsed .icon-show{display:inline-block}
 .faq .faq-list a.collapsed .icon-close{display:none}
+.faq .faq-list .q_content a { display: inline; padding: initial; }
+.faq .faq-list .q_content ul { padding: 5px 0 0 40px; list-style: disc; }
 @media (max-width: 1200px) {
 .faq .faq-list{padding:0}
 }
