@@ -100,7 +100,7 @@
                                  <p>
                                     Read up on guides, tutorials and get answers to most questions 24/7
                                  </p>
-                                 <a href="#" class="btn btn-light btn-block rad">Visit Help Center</a>
+                                 <a href="faq.php" class="btn btn-light btn-block rad">Visit Help Center</a>
                               </div>
                            </div>
                         </div>
@@ -109,13 +109,13 @@
                               <div class="col-md-12">
                                  <div class="info-box mb-4">
                                     <i class="bx bx-envelope"></i>
-                                    <p>help@mcledger.co</p>
+                                    <p>info@mcledger.co</p>
                                  </div>
                               </div>
                               <div class="col-md-12">
                                  <div class="info-box mb-0">
                                     <i class="bx bx-phone-call"></i>
-                                    <p>+971 533 188 199</p>
+                                    <p>+971 56 522 4041​</p>
                                  </div>
                               </div>
                            </div>

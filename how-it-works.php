@@ -79,7 +79,7 @@
                <div class="col-lg-5 pt-0 pt-lg-0 order-2 order-lg-2 d-flex flex-column justify-content-center">
                   <h2 class="mb-0">How it works</h2>
                   <h1 class="base_color mb-5">
-                  You can say that we do all the work while they rest.
+                  Making accounting effortless for you​.
                   </h1>
                </div>
                <div class="col-lg-7 order-1 order-lg-1 hero-img" data-aos="zoom-in" data-aos-delay="150">
@@ -99,15 +99,15 @@
                      <ol class="reg_steps">
                         <li data-aos="slide-up" data-aos-delay="120">
                            <h3>Register</h3>
-                           <p>Give us a call or register online</p>
+                           <p>Give us a call to register or do it through our apps​</p>
                         </li>
                         <li data-aos="slide-up" data-aos-delay="120">
                            <h3>On boarding</h3>
-                           <p>Our expert accountant will visit for business account setup, data collection, and follow up throughout the first two months</p>
+                           <p>Our expert accountant will visit for business account setup, ensure all data is collected, & follow up throughout the first two months of client experience ​</p>
                         </li>
                         <li data-aos="slide-up" data-aos-delay="120">
                            <h3>Activate business</h3>
-                           <p>Each business is reviewed individually and activated accordingly</p>
+                           <p>Each business is reviewed individually and activated accordingly​</p>
                         </li>
                      </ol>
                   </div>
@@ -116,23 +116,23 @@
                   <div class="card-body p-5" data-aos="slide-up" data-aos-delay="100">
                      <div class="row">
                         <div class="col-md-6">
-                           <ol class="reg_steps">
-                              <li data-aos="slide-up" data-aos-delay="120" class="st4">
-                                 <h4 class="mb-3">Snap, receive, post are 3 steps that is an ongoing cycle </h4>
-                                 <div class="step_inner mb-4">
-                                    <h5>Snap</h5>
-                                    <p>Your invoices and receipts</p>
-                                 </div>
-                                 <div class="step_inner mb-4">
-                                    <h5>Receive</h5>
-                                    <p>Get your online financial reports on our mobile and web based app</p>
-                                 </div>
-                                 <div class="step_inner mb-4">
-                                    <h5>Post</h5>
-                                    <p>Your transactions will be processed accordingly</p>
-                                 </div>
-                              </li>
-                           </ul>
+                           
+                           <div data-aos="slide-up" data-aos-delay="120" class="pl-4">
+                              <h4 class="mb-3">Snap, Wait, Receive are 3 steps that is an ongoing cycle </h4>
+                              <div class="step_inner mb-4">
+                                 <h5>Snap/Upload</h5>
+                                 <p>Your invoices and receipts</p>
+                              </div>
+                              <div class="step_inner mb-4">
+                                 <h5>Wait </h5>
+                                 <p>Our team of expert accountants process your transactions ​</p>
+                              </div>
+                              <div class="step_inner mb-4">
+                                 <h5>Receive </h5>
+                                 <p>Get your financial and VAT reports on our mobile or web-based app​</p>
+                              </div>
+                           </div>
+                        
                         </div>
                         <div class="col-md-6" >
                            <img src="assets/img/app_preview.png" alt="" class="mw-100" style="position: absolute; bottom: -140px;">

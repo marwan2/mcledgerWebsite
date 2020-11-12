@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>McLedger</title>
+  <title>McLedger – Online bookkeeping services for small businesses​</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -21,7 +21,7 @@
 </head>
 
 <body>
-  <header id="header" class="fixed-top ">
+  <header id="header" class="fixed-top">
     <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-xl-9 d-flex align-items-center">
@@ -50,8 +50,14 @@
           <img src="assets/img/hero-img.png" class="animated" alt="">
         </div>
         <div class="col-xl-4 col-lg-4 pt-3 pt-lg-0 order-2 order-lg-2 d-flex flex-column justify-content-center">
-          <h1>BookKeeping <br>Simplified</h1>
-          <p class="mb-5">The perfect FinTech app for micro and small businesses in the UAE</p>
+          <h1 class="mb-3">
+            You focus on your <strong>business​</strong><br>
+            We’ll focus on your <strong>bookkeeping​</strong>
+          </h1>
+          <p class="mb-5">
+            Complete <strong>accounting</strong>, <strong>bookkeeping</strong>, 
+            and <strong>VAT services</strong> for <strong>UAE</strong> entrepreneurs​
+          </p>
           <div class="badge badge-light bg-white text-left mb-1 rounded-lg">Save up to 
             <span class="text-info">85%</span> of your accounting cost Today!</div>
           <div><a href="#about" class="btn-get-started btn rad scrollto font-weight-bold">START TRIAL FOR FREE</a></div>
@@ -68,11 +74,11 @@
             <img src="assets/img/art_store.png" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
-            <h3>Your Mobile Accounting Department</h3>
+            <h3>Access Accounting department on the go </h3>
             <p class="mb-5">
-              The ultimate AI solution with a touch of expert accountants.
+              FTA tax agents, Accountants & AI unite in an app for online bookkeeping services​
               <br><br>
-              Be it working in the office or remotely from anywhere - we are built on the foundations of adaptability and flexibility.
+              With our headquarters in Dubai, our team of experienced professionals process your everyday bills on a cloud accounting platform to give you extensive reports in a easy to use mobile & web based app.​
             </p>
             <p class="font-weight-bold">JOIN US NOW</p>
             <a href="#" class="app_stores"><img src="assets/img/googleplay.png" alt="googleplay"></a>
@@ -117,7 +123,7 @@
                 <div class="card-body">
                   <h5 class="card-title">MCLEDGER ACCOUNTING</h5>
                   <p class="card-text">
-                    Catering to complete accounting needs, providing Value Added Tax (VAT) services, bookkeeping, revenue management, and complete financial reports to assist you in making healthy business decisions.
+                    Expert accountants aided by advanced technology to cater to complete accounting needs, providing Value Added Tax (VAT) services, bookkeeping, invoicing software, and complete financial statements and detailed reports to assist you in making healthy business decisions.​
                   </p>
                 </div>
               </div>
@@ -132,7 +138,7 @@
                 <div class="card-body">
                   <h5 class="card-title">MCLEDGER REVENUE MANAGEMENT SYSTEM</h5>
                   <p class="card-text">
-                    Generates customized tax invoices, gives you a flexible and convenient approach to invoice management. On the spot invoice sharing, management of payment allocation, and much more - all in one place.
+                    VAT invoicing made easy with our revenue management system – an invoice software that gives you a flexible and convenient approach to create tax invoices and sharing, as well as flexible payment allocation, and much more - all in a single app. ​
                   </p>
                 </div>
               </div>
@@ -145,8 +151,12 @@
     <section id="features" class="features">
       <div class="container" data-aos="fade-up">
         <div class="section-title mb-5">
-          <h2>Why businesses choose us?</h2>
-          <p>Reliable Accounting</p>
+          <h2>Why choose our accounting services?​</h2>
+          <p class="body_desc">
+            Our online accounting makes it easy for the entrepreneurs to have timely and up to date financial & vat services by experts with minimal efforts required from your end, releasing you from learning complex software & hiring additional resources. ​
+            <br>
+            It’s an accounting experience designed for your convenience. ​
+          </p>
         </div>
         <div class="row whyus_row vis_reports" data-aos="slide-up" data-aos-delay="100">
           <div class="col-md-12 col_content">
@@ -161,8 +171,8 @@
             <div class="media">
               <img src="assets/img/point.png" class="mr-2 mt-2" alt="...">
               <div class="media-body">
-                <h3 class="mt-0 mb-3 text-dark">Tax and Financial Reports</h3>
-                We assure quality reports along with your VAT filing. You can view detailed financial reports that carefully pass through various checkpoints before it reaches you for approval on the application.
+                <h3 class="mt-0 mb-3 text-dark">Tax reports and financial statements​</h3>
+                We assure quality reports along with preparing for timely VAT return filing. You can check complete statements that pass through various checkpoints before it reaches you for approval on the application.​
               </div>
               <img src="assets/img/devices.png" class="ml-2 mw-100" alt="...">
             </div>
@@ -174,8 +184,9 @@
               <img src="assets/img/categorized_trans.png" class="ml-2 mw-100" alt="...">
               <img src="assets/img/point.png" class="mr-2 mt-2" alt="...">
               <div class="media-body">
-                <h3 class="mt-0 mb-3 text-dark">Categorized Transactions</h3>
-                All your transactions are categorized and you receive instant status updates so that you can easily monitor the progress of your accountants.
+                <h3 class="mt-0 mb-3 text-dark">A single space for all your documents​</h3>
+                Just upload your documents and let your accountant take care of the rest.​
+                Your documents are stored securely in your McLedger cloud server with 5 years archiving and categorized with status updates on the progress.​
               </div>
             </div>
           </div>
@@ -191,9 +202,9 @@
               <div class="card rounded-lg p-4">
                 <img src="assets/img/conversion.png" class="" alt="...">
                 <div class="card-body">
-                  <h4 class="card-title">Quick Communication</h4>
+                  <h4 class="card-title">Quick communication with your accountant​</h4>
                   <p class="card-text">
-                    We have an in-app messaging option so that you can communicate with the accountants. No need to call and wait for long response time. Just drop a message about your concerns and we will get back to you in an instant.
+                    Got an accounting related question? No need to call and wait for long response time. Drop your accountant an instant message with an in-app messaging to get a quick answer. ​
                   </p>
                 </div>
               </div>
@@ -398,14 +409,14 @@
               <div class="col-lg-6 col-md-6">
                 <div class="info-box mb-4">
                   <i class="bx bx-envelope"></i>
-                  <p>help@mcledger.co</p>
+                  <p>info@mcledger.co</p>
                 </div>
               </div>
 
               <div class="col-lg-6 col-md-6">
                 <div class="info-box mb-4">
                   <i class="bx bx-phone-call"></i>
-                  <p>+971 533 188 199</p>
+                  <p>+971 56 522 4041​</p>
                 </div>
               </div>
             </div>
@@ -449,7 +460,7 @@
                 <p>
                   Read up on guides, tutorials and get answers to most questions 24/7
                 </p>
-                <a href="#" class="btn btn-light btn-block rad">Visit Help Center</a>
+                <a href="faq.php" class="btn btn-light btn-block rad">Visit Help Center</a>
               </div>
             </div>
           </div>

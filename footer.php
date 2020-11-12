@@ -3,7 +3,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>McLedger</h3>
+            <img src="assets/img/logo.png" alt="McLedger" class="mw-100 mb-4">
             <p>
               Ready to stop wasting time on tasks and start spending it on scaling, growth and delivering superior service?
               <br><br>
@@ -52,24 +52,29 @@
     </div>
 
     <div class="container">
-      <div class="copyright-wrap d-md-flex py-4">
-        <div class="mr-md-auto text-center text-md-left">
-          <div class="copyright">
-            All Rights Reserved to McLedger Accounting LLC. 2020
+      <div class="row copyright-wrap d-md-flex py-4">
+          <div class="col-md-6 mr-md-auto text-center text-md-left">
+            <div class="copyright">
+              &copy 2020 All Rights Reserved by McLedger Accounting LLC.
+            </div>
+            <div class="social-links text-left pt-3 pt-md-0 mt-2">
+              <a href="https://twitter.com/McLedgeruae" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="https://www.facebook.com/mcledgeruae" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="https://www.linkedin.com/company/mcledgeruae" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              <a href="https://www.instagram.com/mcledger" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="https://www.youtube.com/channel/UCESjMRV5uRKWWAjuYMTVXjA" class="youtube"><i class="bx bxl-youtube"></i></a>
+              <a href="https://api.whatsapp.com/send?phone=971565224041&data=AbsNf_lklFFwO5Uii96mL9ydHpz2EqPz1ikBiEtOmIv4L-72PadHom4kNKj7g3NlwXAbbIhBqIpDtcUEAg98YQpaJhYzNybr75Weo8AiW7ZLqlOTvVWa_H7zR2i4yqorvX8&source=FB_Ads" class="whats-app"><i class="bx bxl-whatsapp"></i></a>
+            </div>
           </div>
-          <div class="credits">
-            <a href="privacy-policy.php">Privacy Policy</a> <span class="text-secondary">|</span>
-            <a href="term-conditions.php">Terms & Conditions</a>
+          <div class="col-md-1">
+            <img src="assets/img/apple-touch-icon.png" class="mw-100">
           </div>
-        </div>
-        <div class="social-links text-center text-md-right pt-3 pt-md-0">
-          <a href="https://twitter.com/McLedgeruae" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="https://www.facebook.com/mcledgeruae" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.linkedin.com/company/mcledgeruae" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-          <a href="https://www.instagram.com/mcledger" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="https://www.youtube.com/channel/UCESjMRV5uRKWWAjuYMTVXjA" class="youtube"><i class="bx bxl-youtube"></i></a>
-          <a href="https://api.whatsapp.com/send?phone=971565224041&data=AbsNf_lklFFwO5Uii96mL9ydHpz2EqPz1ikBiEtOmIv4L-72PadHom4kNKj7g3NlwXAbbIhBqIpDtcUEAg98YQpaJhYzNybr75Weo8AiW7ZLqlOTvVWa_H7zR2i4yqorvX8&source=FB_Ads" class="whats-app"><i class="bx bxl-whatsapp"></i></a>
-        </div>
+          <div class="col-md-5 text-right">
+            <div class="credits">
+              <a href="privacy-policy.php">Privacy Policy</a> <span class="text-secondary">|</span>
+              <a href="term-conditions.php">Terms &amp; Conditions</a>
+            </div>
+          </div>
       </div>
       <div class="row">
         <div class="col-md-12 text-center text-muted text-sm-center pb-3">

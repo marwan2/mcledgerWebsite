@@ -41,8 +41,8 @@
       <div class="container-fluid" data-aos="fade-up">
         <div class="row justify-content-center text-center">
           <div class="col-xl-12 col-lg-12 pt-4 mt-4 mb-3 pt-lg-0 order-1 order-lg-1 d-flex flex-column justify-content-center">
-            <h1 class="mb-1">The ultimate invoicing <br>solution for your business</h1>
-            <p class="mb-5">VAT compliant invoicing to manage payments easily</p>
+            <h1 class="mb-1">The ultimate invoicing  <br>software for your business​</h1>
+            <p class="mb-5">The simplest way to manage VAT compliant tax invoices for quick payments​</p>
             <div><a href="#about" class="btn btn-light rad scrollto">START TRIAL FOR FREE</a></div>
           </div>
           <div class="col-xl-7 col-lg-7 order-2 order-lg-2 text-center mt-3" data-aos="zoom-in" data-aos-delay="150">
@@ -57,7 +57,7 @@
           <div class="section-title " style="max-width: 60%; text-align: center; margin: 0 auto; margin-bottom: 50px;">
             <h2>McLedger Revenue <br>Management System</h2>
             <p>
-              This is a sophisticated application to manage revenue related tasks and provide complete information about customer behavior. With our Revenue Management System, manage sales order, delivery note, credit note and much more systematically all in a single app.
+              A sophisticated software to manage revenue related tasks. With our invoice revenue management system, manage revenue, sales order, credit note, delivery notes and much more systematically all in a single app.​
             </p>
           </div>
         </div>
@@ -86,7 +86,7 @@
                 <img src="assets/img/point.png" class="mr-2 mb-4" alt="...">
                 <div class="media-body">
                   <h3 class="mt-0 mb-3">Flexible payment allocation</h3>
-                  Organize payments for any customer. You can overlook if the amount is paid or unpaid, and accordingly assign payments to their invoices once you receive them.
+                  Organize payments for any customer. You can oversee if the amount is paid or unpaid, and accordingly assign payments to their invoices once you receive them.​
                 </div>
               </div>
             </div>
@@ -106,7 +106,7 @@
                     <div class="col-md-8 mb-5 text-center">
                       <h2>Send invoices and receipts</h2>
                       <p>
-                        Our RMS has an in-built option to email or share invoices and receipts with the customers via the application.
+                        Our software has an in-built option to directly email or share invoices and receipts with the customers through it.​
                       </p>
                     </div>
                   </div>

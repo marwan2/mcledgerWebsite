@@ -50,7 +50,7 @@
           <div class="about_hero_pr mt-5">
             <h3>Who we are?</h3>
             <p>
-              Emerging from Salem Ahmad Almoosa Enterprises, McLedger is a FinTech platform that is taking the lead in providing exceptional accounting solutions to entrepreneurs and transforming the clients’ financial documents into financial statements and visual reports - all in one place.
+              Emerging from Salem Ahmad Almoosa Enterprises, McLedger is A UAE based FinTech cloud platform for online bookkeeping services for startups & small businesses to provide quality bookkeeping solutions to entrepreneurs and transforming their everyday bills into financial statements and visual reports - all in one place.​
             </p>
           </div>
         </div>
@@ -67,12 +67,16 @@
           <div class="col-md-6 d-flex flex-column justify-content-center">
               <h3 class="mt-0 mb-3" data-aos="slide-up" data-aos-delay="120">What we do?</h3>
               <p data-aos="slide-up" data-aos-delay="120">
-                McLedger provides online bookkeeping service in the UAE through a state of art application where we process your entries 24/7.
-                <br><br>
-                Now you can focus on your business while we provide you with the quality accounting that you deserve. We maintain proper books of accounts by combining human and artificial intelligence.
-                <br><br>
-                It’s not just about numbers and digits. We care about providing you with business analysis and summary at a glance wherever you are in the world.
+                McLedger provides online bookkeeping service in the UAE through a state of art application where we process your entries 24/7. ​
+                <br>
+                We maintain proper books of accounts by combining human and artificial intelligence to​
               </p>
+              <ul>
+                <li>Process High-quality accounting & VAT services in an app​</li>
+                <li>Avail services fully performed by experts & FTA Tax Agent aided by AI ​</li>
+                <li>Save 80% of your business costs ​</li>
+                <li>Complete invoicing solution syncing with accounting app​</li>
+              </ul>
           </div>
         </div>
 
