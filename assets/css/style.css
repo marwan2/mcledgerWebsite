@@ -78,8 +78,8 @@ h1,h2,h3,h4,h5,h6, .btn-light{font-family:MontBold,sans-serif}
 @media (max-width: 992px) {
 .get-started-btn{margin:0 48px 0 0;padding:6px 18px}
 }
-.mobile-nav-toggle{position:fixed;right:15px;top:15px;z-index:9998;border:0;background:none;font-size:24px;transition:all .4s;outline:none!important;line-height:1;cursor:pointer;text-align:right}
-.mobile-nav-toggle i{color:#fff}
+.mobile-nav-toggle{position:fixed;right:12px;top:18px;z-index:9998;border:0;background:none;font-size:29px;transition:all .4s;outline:none!important;line-height:1;cursor:pointer;text-align:right}
+.mobile-nav-toggle i{color:#5398ff}
 .mobile-nav{position:fixed;top:55px;right:15px;bottom:15px;left:15px;z-index:9999;overflow-y:auto;background:#fff;transition:ease-in-out .2s;opacity:0;visibility:hidden;border-radius:10px;padding:10px 0}
 .mobile-nav *{margin:0;padding:0;list-style:none}
 .mobile-nav a{display:block;position:relative;color:#2c4964;padding:10px 20px;font-weight:500;outline:none}
@@ -371,6 +371,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
 	background-size: contain; background-position-x: -120px;
 	display: flex; align-items: center;
  }
+ .bankIntegration .contents { margin-top: 100px; margin-bottom: 100px; }
 .subscribers input, .contact .contactForm input, .contact .contactForm textarea { border-radius: 20px; border: none; background-color: #fff; }
 .help_center h2 { color: #fff; }
 .help_center .card { border-radius: 20px; background-color: #858cf1; display: flex; justify-content: center; }
@@ -456,9 +457,10 @@ ol.reg_steps {
   padding-left: 40px;
 }
 ol.reg_steps li {
-  margin: 0 0 0.5rem 0;
+  margin: 0 15px 0.5rem 0;
   counter-increment: howWorksCn;
   position: relative;
+  margin-bottom: 20px;
 }
 ol.reg_steps li::before {
   content: counter(howWorksCn);
@@ -482,3 +484,32 @@ ol.reg_steps li.st4::before {content: '4';}
 .blog_card img { border-radius: 30px; }
 .contact_hero:after { content: ''; background: url(../img/contact_hero.png) right top no-repeat; background-size: contain; position: absolute;right: 0;top: 20%; z-index: 5;width: 800px; height: inherit; }
 .features .body_desc { max-width: 70%; margin: 0 auto; }
+.subscribers .card { width: 470px; background: rgba(239, 242, 243, 0.75); border: none; border-radius: 25px; }
+.subscribers .card-body { padding: 40px 30px; }
+.basic_box { overflow: visible; display: flex; align-content: center; border-radius: 30px; background-color: #f4f5f7; height: 410px; margin-bottom: 60px; width: 100%; }
+.basic_box .col_img { height: 100%; }
+.basic_box .col_img img { margin-bottom: 0;padding-top: 0;position: absolute;bottom: 30px;left: -75px; }
+@media (max-width: 575px) {
+	#hero:before {content:unset;}
+	#hero { background-size: initial; }
+	#hero .container, #hero .container-fluid { padding-top: 0; }
+	section { padding: 50px 0; }
+	.services .apps_card_down { margin-top: 15px; }
+	.vis_reports .col_content { padding: 50px 35px; }
+	.vis_reports:before { content: unset; }
+	.vis_reports:after { width: 100%; position: relative; background-position-x: center; }
+	.fin_reports .media, .cat_trans .media { display: block; }
+	.fin_reports .point_img { display: none; }
+	.bankIntegration { height: auto; background-position-x: center; }
+	.bankIntegration .contents { margin-top: 0px; margin-bottom: 158px; }
+	.subscribers .card { width: 100%; }
+	.contactForm { margin-bottom: 70px; }
+	.credits, .footer_icon { text-align: center }
+	.social-links { display: flex; justify-content: center; margin-bottom: 20px; }
+	.basic_box { padding: 15px; }
+	.basic_box, .basic_box .col_img { height: auto; }
+	.basic_box .col_img img { position: relative; left: 0; bottom: 0; }
+	.basic_box .col_content { margin-top: 20px; padding: 10px 10px; }
+	#hero.invoicing-hero .container-fluid:before, #hero.invoicing-hero .container-fluid:after, .pricing-hero .container-fluid:before, .pricing-hero .container-fluid:after { content: unset !important; }
+	#hero.invoicing-hero { background-size: cover; }
+}

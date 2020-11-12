@@ -81,7 +81,7 @@
         </div>
 
         <div class="row statistics_cards">
-          <div class="col-md-4 stat_col">
+          <div class="col-md-4 col-6 stat_col">
             <div class="card" data-aos="slide-up" data-aos-delay="100">
               <div class="card-body">
                 <h1 class="gradient">2018</h1>
@@ -89,7 +89,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 stat_col">
+          <div class="col-md-4 col-6 stat_col">
             <div class="card" data-aos="slide-up" data-aos-delay="110">
               <div class="card-body">
                 <h1 class="gradient">60+</h1>
@@ -97,7 +97,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 stat_col">
+          <div class="col-md-4 col-6 stat_col">
             <div class="card active" data-aos="slide-up" data-aos-delay="120">
               <div class="card-body">
                 <h1 class="gradient">1M+</h1>
@@ -115,7 +115,7 @@
           Businesses we work with
         </h2>
         <div class="row statistics_cards business_cards">
-          <div class="col-md-4 stat_col">
+          <div class="col-md-4 col-6 stat_col">
             <div class="card" data-aos="slide-up" data-aos-delay="110">
               <div class="card-body">
                 <div class="bs_img"><img src="assets/img/about/b8.png"></div>
@@ -123,7 +123,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 stat_col">
+          <div class="col-md-4 col-6 stat_col">
             <div class="card" data-aos="slide-up" data-aos-delay="110">
               <div class="card-body">
                 <div class="bs_img"><img src="assets/img/about/b7.png"></div>
@@ -131,7 +131,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 stat_col">
+          <div class="col-md-4 col-6 stat_col">
             <div class="card" data-aos="slide-up" data-aos-delay="110">
               <div class="card-body">
                 <div class="bs_img"><img src="assets/img/about/b3.png"></div>
@@ -139,7 +139,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 stat_col">
+          <div class="col-md-4 col-6 stat_col">
             <div class="card" data-aos="slide-up" data-aos-delay="110">
               <div class="card-body">
                 <div class="bs_img"><img src="assets/img/about/b2.png"></div>
@@ -147,7 +147,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 stat_col">
+          <div class="col-md-4 col-6 stat_col">
             <div class="card" data-aos="slide-up" data-aos-delay="110">
               <div class="card-body">
                 <div class="bs_img"><img src="assets/img/about/b6.png"></div>
@@ -155,7 +155,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 stat_col">
+          <div class="col-md-4 col-6 stat_col">
             <div class="card" data-aos="slide-up" data-aos-delay="110">
               <div class="card-body">
                 <div class="bs_img"><img src="assets/img/about/b5.png"></div>
@@ -163,7 +163,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 stat_col">
+          <div class="col-md-4 col-6 stat_col">
             <div class="card" data-aos="slide-up" data-aos-delay="110">
               <div class="card-body">
                 <div class="bs_img"><img src="assets/img/about/b1.png"></div>
@@ -171,7 +171,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 stat_col">
+          <div class="col-md-4 col-6 stat_col">
             <div class="card" data-aos="slide-up" data-aos-delay="110">
               <div class="card-body">
                 <div class="bs_img"><img src="assets/img/about/b4.png"></div>

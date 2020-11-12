@@ -37,7 +37,7 @@
         </div>
       </div>
     </header>
-    <section id="hero" class="d-flex align-items-center">
+    <section id="hero" class="home-hero d-flex align-items-center">
       <div class="container-fluid" data-aos="fade-up">
         <div class="row justify-content-center">
           <div class="col-xl-6 col-lg-6 order-1 order-lg-1 hero-img" data-aos="zoom-in" data-aos-delay="150">
@@ -54,7 +54,7 @@
             </p>
             <div class="badge badge-light bg-white text-left mb-1 rounded-lg">Save up to
               <span class="text-info">85%</span> of your accounting cost Today!</div>
-              <div><a href="#about" class="btn-get-started btn rad scrollto font-weight-bold">START TRIAL FOR FREE</a></div>
+              <div><a href="https://portal.mcledger.co/register" class="btn-get-started btn rad scrollto font-weight-bold">START TRIAL FOR FREE</a></div>
             </div>
           </div>
         </div>
@@ -63,7 +63,7 @@
         <section id="about" class="about">
           <div class="container">
             <div class="row d-flex align-items-center">
-              <div class="col-lg-5 offset-1 order-1 order-lg-2 d-flex justify-content-center text-center" data-aos="zoom-in" data-aos-delay="150">
+              <div class="col-lg-5 offset-1 order-1 order-lg-2 d-flex justify-content-center text-center" data-aos="zoom-in" data-aos-delay="100">
                 <img src="assets/img/art_store.png" class="img-fluid" alt="">
               </div>
               <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
@@ -159,7 +159,7 @@
             <div class="row whyus_row fin_reports" data-aos="slide-up" data-aos-delay="110">
               <div class="col-md-12">
                 <div class="media">
-                  <img src="assets/img/point.png" class="mr-2 mt-2" alt="...">
+                  <img src="assets/img/point.png" class="mr-2 mt-2 point_img">
                   <div class="media-body">
                     <h3 class="mt-0 mb-3 text-dark">Tax reports and financial statements​</h3>
                     We assure quality reports along with preparing for timely VAT return filing. You can check complete statements that pass through various checkpoints before it reaches you for approval on the application.​
@@ -172,7 +172,7 @@
               <div class="col-md-12">
                 <div class="media">
                   <img src="assets/img/categorized_trans.png" class="ml-2 mw-100" alt="...">
-                  <img src="assets/img/point.png" class="mr-2 mt-2" alt="...">
+                  <img src="assets/img/point.png" class="mr-2 mt-2 point_img">
                   <div class="media-body">
                     <h3 class="mt-0 mb-3 text-dark">A single space for all your documents​</h3>
                     Just upload your documents and let your accountant take care of the rest.​
@@ -311,7 +311,7 @@
           <section id="bankIntegration" class="bankIntegration mb-0 pb-0">
             <div class="container">
               <div class="row d-flex justify-content-end mb-0" data-aos="slide-up" data-aos-delay="100">
-                <div class="col-md-5" style="margin-top: 100px; margin-bottom: 100px;">
+                <div class="col-md-5 contents">
                   <h2 class="mb-4">Linking Your bank accounts and credit cards</h2>
                   <p class="pb-5">
                     pulls your transactions and balances in
@@ -346,8 +346,8 @@
             <div class="container">
               <div class="row">
                 <div class="col-md-8" style="background: url(assets/img/flying_envelope.png) center center no-repeat">
-                  <div class="card" style="width: 470px; background: rgba(239, 242, 243, 0.75); border: none; border-radius: 25px;">
-                    <div class="card-body" style="padding: 40px 30px;">
+                  <div class="card">
+                    <div class="card-body">
                       <h3>Let’s keep you posted!</h3>
                       <p>Subscribe to stay updated on the latest news and tips.</p>
                       <form action="subscribe" method="post" role="form" class="php-email-form pt-4">

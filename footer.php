@@ -10,7 +10,6 @@
               <a href="#" class="btn btn-primary btn_bg btn-block">START TRIAL FOR FREE</a>
             </p>
           </div>
-
           <div class="col-lg-9">
             <div class="row" style="padding-left: 40px;">
               <div class="col-lg-3 col-md-6 footer-links">
@@ -66,7 +65,7 @@
               <a href="https://api.whatsapp.com/send?phone=971565224041&data=AbsNf_lklFFwO5Uii96mL9ydHpz2EqPz1ikBiEtOmIv4L-72PadHom4kNKj7g3NlwXAbbIhBqIpDtcUEAg98YQpaJhYzNybr75Weo8AiW7ZLqlOTvVWa_H7zR2i4yqorvX8&source=FB_Ads" class="whats-app"><i class="bx bxl-whatsapp"></i></a>
             </div>
           </div>
-          <div class="col-md-1">
+          <div class="col-md-1 footer_icon">
             <img src="assets/img/apple-touch-icon.png" class="mw-100">
           </div>
           <div class="col-md-5 text-right">

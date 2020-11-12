@@ -29,7 +29,6 @@
       if($val === 0) {
          return "<i class='bx bx-x unchecked'></i>";
       }
-
       return 'NA';
    }
 ?>
@@ -91,25 +90,27 @@
       <main id="main">
          <section class="about_block">
             <div class="container">
-               <div class="_row" style="overflow: visible; display: flex; align-content: center; border-radius: 30px; background-color: #f4f5f7; height: 410px; margin-bottom: 60px; width: 100%;">
-                  <div class="col-md-6" style="height: 100%">
-                     <img src="assets/img/app_auth.png" class="mw-100" alt="..." style="margin-bottom: 0;padding-top: 0;position: absolute;bottom: 30px;left: -75px;" data-aos="slide-up" data-aos-delay="120">
-                  </div>
-                  <div class="col-md-6 d-flex flex-column justify-content-center">
-                     <ol class="reg_steps">
-                        <li data-aos="slide-up" data-aos-delay="120">
-                           <h3>Register</h3>
-                           <p>Give us a call to register or do it through our apps​</p>
-                        </li>
-                        <li data-aos="slide-up" data-aos-delay="120">
-                           <h3>On boarding</h3>
-                           <p>Our expert accountant will visit for business account setup, ensure all data is collected, & follow up throughout the first two months of client experience ​</p>
-                        </li>
-                        <li data-aos="slide-up" data-aos-delay="120">
-                           <h3>Activate business</h3>
-                           <p>Each business is reviewed individually and activated accordingly​</p>
-                        </li>
-                     </ol>
+               <div class="basic_box">
+                  <div class="row">
+                     <div class="col-md-6 col-12 col_img">
+                        <img src="assets/img/app_auth.png" class="mw-100" data-aos="slide-up" data-aos-delay="120">
+                     </div>
+                     <div class="col-md-6 col-12 d-flex flex-column justify-content-center col_content">
+                        <ol class="reg_steps">
+                           <li data-aos="slide-up" data-aos-delay="120">
+                              <h3>Register</h3>
+                              <p>Give us a call to register or do it through our apps​</p>
+                           </li>
+                           <li data-aos="slide-up" data-aos-delay="120">
+                              <h3>On boarding</h3>
+                              <p>Our expert accountant will visit for business account setup, ensure all data is collected, & follow up throughout the first two months of client experience ​</p>
+                           </li>
+                           <li data-aos="slide-up" data-aos-delay="120">
+                              <h3>Activate business</h3>
+                              <p>Each business is reviewed individually and activated accordingly​</p>
+                           </li>
+                        </ol>
+                     </div>
                   </div>
                </div>
                <div class="card" style="overflow: visible; border-radius: 30px; background-color: #f4f5f7; margin-bottom: 60px; width: 100%; border: none;">

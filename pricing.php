@@ -101,7 +101,7 @@
                      
                      <div class="row statistics_cards business_cards">
                         <?php foreach($reps as $rep): ?>
-                        <div class="col-md-3 stat_col h-auto">
+                        <div class="col-md-3 col-6 stat_col h-auto">
                            <div class="card" data-aos="slide-up" data-aos-delay="110">
                               <div class="card-body">
                                  <div class="bs_img"><img src="assets/img/chart2.png" style="width: 70%;"></div>
