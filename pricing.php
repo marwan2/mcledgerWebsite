@@ -43,13 +43,13 @@
                <div class="col-xl-5 col-lg-5 order-2 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
                   <img src="assets/img/target.png" class="animated" alt="">
                </div>
-               <div class="col-xl-5 col-lg-5 pt-3 pt-lg-0 order-1 order-lg-1 d-flex flex-column justify-content-center">
+               <div class="col-xl-4 col-lg-5 pt-3 pt-lg-0 order-1 order-lg-1 d-flex flex-column justify-content-center">
                   <h1 class="base_color mb-5">Stop Bookkeeping!​</h1>
                   <!-- <h2 class="mb-0">Check out Plans</h2> -->
                   <p>
                      We’re here to save your accounts and give you the time to do what you love. You deserve it.​
                   </p>
-                  <div><a href="#" class="btn-get-started btn rad scrollto font-weight-bold">Get started today​</a></div>
+                  <div><a href="#pricing" class="btn-get-started btn rad scrollto font-weight-bold">Get started today​</a></div>
                </div>
             </div>
          </div>
@@ -90,7 +90,7 @@
          "Unique report layout",
          ];
          ?>
-         <section id="features" class="features mt-5" style="overflow: visible">
+         <section id="finreports" class="features mt-5" style="overflow: visible">
             <div class="container" data-aos="fade-up">
                <div class="row" data-aos="slide-up" data-aos-delay="120" style="border-radius: 30px;">
                   <div class="col-md-12">
@@ -132,7 +132,7 @@
          </section>
          <section id="pricing" class="pricing pt-0">
             <div class="container" data-aos="fade-up">
-               <div class="section-title">
+               <div class="section-title pt-4">
                   <h2>Quality services with more value for less money​</h2>
                   <p>
                      Join our community for small business owners who trust us with their book & get a free consultation with our bookkeeping expert​
