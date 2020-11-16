@@ -120,9 +120,9 @@
       </div>
       <div class="row">
         <div class="col-md-12 text-center text-muted text-sm-center pb-3">
-          <small>
+          {{-- <small>
             All trademarks, service marks and logos appearing on the site are the property of their respective owners.
-          </small>
+          </small> --}}
         </div>
       </div>
     </div>

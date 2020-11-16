@@ -29,7 +29,7 @@ class BlogController extends InitController
 
 	public function index()
     {
-        $page_size = 6;
+        $page_size = 12;
 
         $blog = new Blog;
         $blog = $blog->whereActive(1);

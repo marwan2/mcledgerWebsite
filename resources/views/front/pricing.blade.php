@@ -40,18 +40,18 @@
    </section>
    <?php
    $reps = [
-   "Balance sheet​",
-   "Profit & loss​",
-   "Statement of accounts​",
-   "Aged customer analysis​",
-   "Aged supplier analysis​",
-   "Sales report​",
-   "Purchase report​",
-   "Cash flow report​",
-   "Expenses breakdown report​",
-   "Balances breakdown report​",
-   "Bank reconciliation​",
-   "Unique report layout",
+      "1"=>"Balance sheet​",
+      "2"=>"Profit & loss​",
+      "3"=>"Statement of accounts​",
+      "4"=>"Aged customer analysis​",
+      "5"=>"Aged supplier analysis​",
+      "6"=>"Sales report​",
+      "7"=>"Purchase report​",
+      "8"=>"Cash flow report​",
+      "9"=>"Expenses breakdown report​",
+      "10"=>"Balances breakdown report​",
+      "11"=>"Bank reconciliation​",
+      "12"=>"Unique report layout",
    ];
    ?>
    <section id="finreports" class="features mt-5" style="overflow: visible">

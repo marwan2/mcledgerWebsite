@@ -9,10 +9,8 @@
                 <a href="{{App\BlogCategory::url($post->category)}}" class="btn btn-light bg-white">{{$post->category->title??''}}</a>
                 <div class="btn btn-light bg-white">{{Blog::date($post)}}</div>
             </div>
-            <h5 class="card-title">{{$post->title}}</h5>
-            <p class="card-text">
-                {{Blog::limit($post, 80)}}
-            </p>
+            <a href="{{Blog::url($post)}}"><h5 class="card-title">{{$post->title}}</h5></a>
+            <p class="card-text">{!!Blog::limit($post, 80)!!}</p>
             {{-- <p class="card-text"><small class="text-muted">Last updated {{Helper::since($post->updated_at)}}</small></p> --}}
         </div>
     </div>

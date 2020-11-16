@@ -1,3 +1,42 @@
+@php
+  $clients = [
+    "1"=>[
+        "McLedger has been extremely useful to my business in managing everything effortlessly. When it comes to bookkeeping, it is super easy to cross-check entries and receive instant notifications that keep me up to date.",
+        "Kudu Arts",
+        "",
+    ],
+    "2"=>[
+        "We love working with McLedger. Our books are well organized and the service is prompt. We always get our reports on time and this is helping us grow our business and move in the right direction.",
+        "Pravda Studios",
+        "",
+    ],
+    "3"=>[
+        "With McLedger’s service, my work has become very smooth. I believe that they are doing a great job. It’s amazing how easily you can understand everything on their app. I really love how super friendly their staff is, always ready to help out.",
+        "Eagles Laundry",
+        "",
+    ],
+    "4"=>[
+        "McLedger not only helps me in my daily bookkeeping but also in growing my business by saving my time every day. I now focus on making sales and getting more clients. They have made my life easy with quality reporting and financial summaries.",
+        "National Marketing",
+        "Hussein Saleh",
+    ],
+    "5"=>[
+        "McLedger has changed the way we do our accounting. Their packages are of a reasonable price. The app itself is very user-friendly with features that make their services stand out.",
+        "Silver Castle Trading L.L.C",
+        "Mr. Hussein",
+    ],
+    "6"=>[
+        "The quality of services provided by McLedger is extremely high. I am so impressed by the app itself due to its functionality and it makes the services transparent and reliable.",
+        "TruCare Clinic",
+        "Mrs. Rachael",
+    ],
+    "7"=>[
+        "We are very happy with McLedger's accounting services through its app. The team constantly keeps enhancing its platform, services & are truly very patient.",
+        "Al Ramsa Institute‏ for Emirati Arabic language",
+        "",
+    ]
+  ];
+@endphp
 @extends('front.layouts.master')
 @section('title') @stop
 @section('content')
@@ -28,7 +67,7 @@
     <div class="container">
       <div class="row d-flex align-items-center">
         <div class="col-lg-5 offset-1 order-1 order-lg-2 d-flex justify-content-center text-center" data-aos="zoom-in" data-aos-delay="100">
-          <img src="assets/img/art_store.png" class="img-fluid" alt="">
+          <img src="assets/img/art_store.png" class="img-fluid" alt="Mcledger Apps">
         </div>
         <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
           <h3>Access Accounting department on the go </h3>
@@ -38,30 +77,8 @@
             With our headquarters in Dubai, our team of experienced professionals process your everyday bills on a cloud accounting platform to give you extensive reports in a easy to use mobile & web based app.​
           </p>
           <p class="font-weight-bold">JOIN US NOW</p>
-          <a href="#" class="app_stores"><img src="assets/img/googleplay.png" alt="googleplay"></a>
-          <a href="#" class="app_stores"><img src="assets/img/appstore.png" alt="appstore"></a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="counts" class="counts d-none">
-    <div class="container">
-      <div class="row counters">
-        <div class="col-lg-3 col-6 text-center">
-          <span data-toggle="counter-up">232</span>
-          <p>Clients</p>
-        </div>
-        <div class="col-lg-3 col-6 text-center">
-          <span data-toggle="counter-up">521</span>
-          <p>Projects</p>
-        </div>
-        <div class="col-lg-3 col-6 text-center">
-          <span data-toggle="counter-up">1,463</span>
-          <p>Hours Of Support</p>
-        </div>
-        <div class="col-lg-3 col-6 text-center">
-          <span data-toggle="counter-up">15</span>
-          <p>Hard Workers</p>
+          <a href="{{url('app')}}" class="app_stores"><img src="assets/img/googleplay.png" alt="googleplay"></a>
+          <a href="{{url('app')}}" class="app_stores"><img src="assets/img/appstore.png" alt="appstore"></a>
         </div>
       </div>
     </div>
@@ -230,17 +247,19 @@
             </div>
             <div class="col-md-6 order-2 order-lg-1 d-flex">
               <div class="owl-carousel testimonials-carousel">
+                @foreach($clients as $index=>$cl)
                 <div class="testimonial-item">
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    The quality of services provided by McLedger is extremely high. I am so impressed by the app itself due to its functionality and it makes the services transparent and reliable.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                  <h3>Mrs. Rachael</h3>
-                  <h4>TruCare Clinic</h4>
+                    <p>
+                      <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                      {!!$cl[0]!!}
+                      <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                    </p>
+                    <img src="assets/img/clients/{{$index}}.jpg" class="testimonial-img" alt="{{$cl[1]}}">
+                    <h3>{{$cl[1]}}</h3>
+                    <h4>{{$cl[2]}}</h4>
                 </div>
-                <div class="testimonial-item">
+                @endforeach
+                {{-- <div class="testimonial-item">
                   <p>
                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                     McLedger has changed the way we do our accounting. Their packages are of a reasonable price. The app itself is very user-friendly with features that make their services stand out.
@@ -267,8 +286,8 @@
                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                   </p>
                   <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                  <h3>National Marketing</h3>
-                  <h4>Hussein Saleh</h4>
+                  <h3>Hussein Saleh</h3>
+                  <h4>National Marketing</h4>
                 </div>
                 <div class="testimonial-item">
                   <p>
@@ -299,7 +318,7 @@
                   <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
                   <h3>Afsal</h3>
                   <h4>Melbourne Restaurant, Abu Dhabi</h4>
-                </div>
+                </div> --}}
               </div>
             </div>
           </div>

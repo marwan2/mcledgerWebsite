@@ -50,7 +50,7 @@
         </div>
       </div>
     </section>
-    <section>
+    <section class="pt-0">
       <div class="container text-center">
         <nav class="justify-content-center blog_paging" aria-label="Page navigation example">
         {!!$blog->links()!!}

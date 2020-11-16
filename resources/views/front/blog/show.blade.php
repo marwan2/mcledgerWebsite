@@ -15,7 +15,7 @@
    <div class="container" data-aos="fade-up" style="z-index: 3;">
       <div class="row justify-content-center pt-5">
          <div class="col-lg-6 order-2 order-lg-2 hero-img p-5" data-aos="zoom-in" data-aos-delay="150">
-            {!!Blog::getImage($item, 'animated mw-100', false, false)!!}
+            {!!Blog::getImage($item, 'animated mw-100 rounded-lg', false, false)!!}
          </div>
          <div class="col-lg-6 pt-3 pt-lg-0 order-1 order-lg-1 d-flex flex-column justify-content-center">
             <h2 class="mb-0">Blog <i class='bx bx-chevron-right bx-flip-vertical' ></i> post</h2>
