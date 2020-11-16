@@ -1,0 +1,31 @@
+ @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+body { font-family: 'Almarai', sans-serif; direction: rtl; text-align: right; }
+.navbar-nav { padding-left: unset; padding-right: 0 }
+.sidebar .nav-item .nav-link { text-align: right !important; }
+.sidebar .nav-item .nav-link i { margin-left: .25rem; margin-right: unset }
+.dropdown-item { text-align: right; }
+.stat_count { font-size: 30px; }
+.stat_label { font-size: 13px; color: #666 }
+.stat_item { padding: 20px; background: #f0f0f0 }
+.fabric_badges .badge { font-weight: 300 }
+.doc_desc { text-align: center; }
+.img_preview { width: 80px; }
+.docs_container { margin-bottom: 20px; padding-bottom: 20px; }
+.doc_file { text-decoration: none; }
+.custom-control-inline { margin-left: 1rem; margin-right: unset; }
+.members_head { padding-top: 10px; padding-bottom: 5px; border-bottom: 1px solid #f0f0f0; }
+.tb_info td { padding: 2px; font-size: 13px; }
+.lbl_input { color: #004499; }
+input.form-control { color: #000; font-weight: 700 }
+.scroll-to-top { right: unset; left: 1rem; }
+.topbar .dropdown .dropdown-menu { left: 0; right: unset; }
+.dropdown-menu { text-align: right; }
+.card-header { font-weight: 800; }
+div.dataTables_wrapper div.dataTables_filter { text-align: left !important; }
+.breadcrumb-item + .breadcrumb-item::before { padding-left: 10px; }
+.bg-login-image { background: url(../../img/login_bg.jpg) no-repeat center center !important; }
+.text-left { text-align: right !important; }
+.text-right { text-align: left !important; }
+.ml-auto { margin-right: auto !important; margin-left: unset !important; }
+.offset-3 { margin-right: 25%; margin-left: unset; }
+.sidebar .nav-item .nav-link span { font-size: 0.92rem; }
