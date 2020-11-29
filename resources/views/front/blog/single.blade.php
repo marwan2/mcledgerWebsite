@@ -1,13 +1,13 @@
 @php use App\Blog; @endphp
-<div class="col-md-6">
-    <div class="card border-0 rad p-3 blog_card mb-3">
-        <a href="{{Blog::url($post)}}">
+<div class="col-md-6" data-aos="fade-up">
+    <div class="card border-0 rad blog_card mb-3">
+        <a href="{{Blog::url($post)}}" class="p-3 pb-0">
             {!!Blog::getImage($post, 'card-img-top', true, false)!!}
         </a>
-        <div class="card-body">
+        <div class="card-body pt-0">
             <div class="post_tags mb-3">
-                <a href="{{App\BlogCategory::url($post->category)}}" class="btn btn-light bg-white">{{$post->category->title??''}}</a>
-                <div class="btn btn-light bg-white">{{Blog::date($post)}}</div>
+                <a href="{{App\BlogCategory::url($post->category)}}" class="btn btn-light btn-sm bg-white font-weight-normal">{{$post->category->title??''}}</a>
+                <button class="btn btn-light btn-sm bg-white font-weight-normal">{{Blog::date($post)}}</button>
             </div>
             <a href="{{Blog::url($post)}}"><h5 class="card-title">{{$post->title}}</h5></a>
             <p class="card-text">{!!Blog::limit($post, 80)!!}</p>

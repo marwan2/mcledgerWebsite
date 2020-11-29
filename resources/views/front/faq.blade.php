@@ -4,8 +4,8 @@
 @extends('front.layouts.master')
 @section('title') FAQ @stop
 @section('content')
-  <section id="hero" class="d-flex align-items-center about-hero" style="height: 60vh;">
-    <div style="width: 50%; height: 60vh; position: absolute; top: 0; right:0; background-color: #edffff; border-bottom-left-radius: 50px; z-index: 2; content: ''"></div>
+  <section id="hero" class="d-flex align-items-center about-hero faq-hero">
+    <div class="faq_bg"></div>
     <div class="container" data-aos="fade-up" style="z-index: 3;">
       <div class="row justify-content-center pt-5">
         <div class="col-lg-7 order-2 order-lg-2 hero-img p-5" data-aos="zoom-in" data-aos-delay="150">
@@ -34,7 +34,7 @@
                       {{$row['qa']}} <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i>
                     </a>
                     <div id="faq-list-{{$counter}}" class="collapse q_content" data-parent=".faq-list">
-                      <p>{{ $row['ans'] }}</p>
+                      <p>{!! $row['ans'] !!}</p>
                     </div>
                   </li>
                 @php $counter++; @endphp

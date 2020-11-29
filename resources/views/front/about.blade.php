@@ -1,8 +1,8 @@
 @extends('front.layouts.master')
-@section('title') @stop
+@section('title') About Us - @stop
 @section('content')
   <section id="hero" class="d-flex align-items-center about-hero">
-    <div style="width: 50%; height: 80vh; position: absolute; top: 0; right:0; background-color: #eff0ff; border-bottom-left-radius: 50px; z-index: 2; content: ''"></div>
+    <div class="about_bg"></div>
     <div class="container" data-aos="fade-up" style="z-index: 3;">
       <div class="row justify-content-center pt-5">
         <div class="col-lg-7 order-2 order-lg-2 hero-img p-5" data-aos="zoom-in" data-aos-delay="150">
@@ -24,9 +24,9 @@
   <main id="main">
     <section class="about_block">
       <div class="container">
-        <div class="_row" style="overflow: visible; display: flex; align-content: center; border-radius: 30px; background-color: #f4f5f7; height: 430px; margin-bottom: 60px; width: 100%;">
-          <div class="col-md-6" style="height: 100%">
-            <img src="assets/img/about_gr.png" class="mw-100" alt="..." style="margin-bottom: 0;padding-top: 0;position: absolute;bottom: 30px;left: -75px;" data-aos="slide-up" data-aos-delay="120">
+        <div class="_row whatwedo_wrap">
+          <div class="col-md-6 h-100">
+            <img src="{{url('assets/img/about_gr.png')}}" class="mw-100" alt="What we do" data-aos="slide-up" data-aos-delay="120">
           </div>
           <div class="col-md-6 d-flex flex-column justify-content-center">
               <h3 class="mt-0 mb-3" data-aos="slide-up" data-aos-delay="120">What we do?</h3>
@@ -45,7 +45,7 @@
         </div>
 
         <div class="row statistics_cards">
-          <div class="col-md-4 col-6 stat_col">
+          <div class="col-md-4 col-12 stat_col mb-3">
             <div class="card" data-aos="slide-up" data-aos-delay="100">
               <div class="card-body">
                 <h1 class="gradient">2018</h1>
@@ -53,7 +53,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 col-6 stat_col">
+          <div class="col-md-4 col-12 stat_col mb-3">
             <div class="card" data-aos="slide-up" data-aos-delay="110">
               <div class="card-body">
                 <h1 class="gradient">60+</h1>
@@ -61,7 +61,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 col-6 stat_col">
+          <div class="col-md-4 col-12 stat_col mb-3">
             <div class="card active" data-aos="slide-up" data-aos-delay="120">
               <div class="card-body">
                 <h1 class="gradient">1M+</h1>

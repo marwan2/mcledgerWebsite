@@ -36,17 +36,15 @@
 @section('title') How it works @stop
 @section('content')
 <section id="hero" class="d-flex align-items-center about-hero">
-<div style="width: 50%; height: 80vh; position: absolute; top: 0; left:0; background-color: #fff; border-bottom-right-radius: 50px; z-index: 2; content: ''; border-right: 5px solid #e0e0e0; border-bottom: 5px solid #e0e0e0"></div>
+<div class="howworks_bg"></div>
 <div class="container mt-0 pt-0" data-aos="fade-up" style="z-index: 3;">
    <div class="row justify-content-center pt-1">
       <div class="col-lg-5 pt-0 pt-lg-0 order-2 order-lg-2 d-flex flex-column justify-content-center">
          <h2 class="mb-0">How it works</h2>
-         <h1 class="base_color mb-5">
-         Making accounting effortless for you​.
-         </h1>
+         <h1 class="base_color mb-5">Making accounting effortless for you​.</h1>
       </div>
-      <div class="col-lg-7 order-1 order-lg-1 hero-img" data-aos="zoom-in" data-aos-delay="150">
-         <img src="assets/img/how_hero.png" class="mw-100" style="margin-top: -20px;" alt="">
+      <div class="col-lg-7 order-1 order-lg-1 hero-img" data-aos="zoom-in" data-aos-delay="120">
+         <img src="{{url('assets/img/how_hero.png')}}" class="mw-100 how_hero_img" alt="How it works">
       </div>
    </div>
 </div>
@@ -62,26 +60,25 @@
             <div class="col-md-6 col-12 d-flex flex-column justify-content-center col_content">
                <ol class="reg_steps">
                   <li data-aos="slide-up" data-aos-delay="120">
-                     <h3>Register</h3>
+                     <h4>Register</h4>
                      <p>Give us a call to register or do it through our apps​</p>
                   </li>
                   <li data-aos="slide-up" data-aos-delay="120">
-                     <h3>On boarding</h3>
+                     <h4>On boarding</h4>
                      <p>Our expert accountant will visit for business account setup, ensure all data is collected, & follow up throughout the first two months of client experience ​</p>
                   </li>
                   <li data-aos="slide-up" data-aos-delay="120">
-                     <h3>Activate business</h3>
+                     <h4>Activate business</h4>
                      <p>Each business is reviewed individually and activated accordingly​</p>
                   </li>
                </ol>
             </div>
          </div>
       </div>
-      <div class="card" style="overflow: visible; border-radius: 30px; background-color: #f4f5f7; margin-bottom: 60px; width: 100%; border: none;">
+      <div class="card snap_card">
          <div class="card-body p-5" data-aos="slide-up" data-aos-delay="100">
             <div class="row">
                <div class="col-md-6">
-                  
                   <div data-aos="slide-up" data-aos-delay="120" class="pl-4">
                      <h4 class="mb-3">Snap, Wait, Receive are 3 steps that is an ongoing cycle </h4>
                      <div class="step_inner mb-4">
@@ -97,10 +94,9 @@
                         <p>Get your financial and VAT reports on our mobile or web-based app​</p>
                      </div>
                   </div>
-               
                </div>
-               <div class="col-md-6" >
-                  <img src="assets/img/app_preview.png" alt="" class="mw-100" style="position: absolute; bottom: -140px;">
+               <div class="col-md-6">
+                  <img src="{{url('assets/img/app_preview.png')}}" alt="Snap, Wait, Receive" class="mw-100">
                </div>
             </div>
          </div>
@@ -115,18 +111,17 @@
                <div class="card-body">
                   <h2 class="text-center mb-5">Why McLedger?</h2>
                   <div class="row">
-                     <div class="col-md-5 pr-0 compare_items">
+                     <div class="col-md-5 col-4  pr-0 compare_items">
                         <ul>
                            <li class="header">Item</li>
                            <?php foreach ($featuresTable as $label => $vars): ?>
-                           <li><?= $label ?></li>
+                           <li>{{ $label }}</li>
                            <?php endforeach; ?>
                         </ul>
                      </div>
-
-                     <div class="col-md-7 pl-0">
+                     <div class="col-md-7 col-8 pl-0">
                         <div class="row compare_cols">
-                           <div class="col-md-3">
+                           <div class="col-md-3 col-3">
                               <ul class="bg mc_col">
                                  <li class="header">McLedger</li>
                                  <?php foreach ($featuresTable as $label => $vars): ?>
@@ -134,7 +129,7 @@
                                  <?php endforeach; ?>
                               </ul>
                            </div>
-                           <div class="col-md-3">
+                           <div class="col-md-3 col-3">
                               <ul>
                                  <li class="header">In-House</li>
                                  <?php foreach ($featuresTable as $label => $vars): ?>
@@ -142,7 +137,7 @@
                                  <?php endforeach; ?>
                               </ul>
                            </div>
-                           <div class="col-md-3">
+                           <div class="col-md-3 col-3">
                               <ul>
                                  <li class="header">Freelance</li>
                                  <?php foreach ($featuresTable as $label => $vars): ?>
@@ -150,7 +145,7 @@
                                  <?php endforeach; ?>
                               </ul>
                            </div>
-                           <div class="col-md-3">
+                           <div class="col-md-3 col-3">
                               <ul>
                                  <li class="header">Outsourcing</li>
                                  <?php foreach ($featuresTable as $label => $vars): ?>

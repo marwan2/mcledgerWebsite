@@ -56,7 +56,7 @@ Route::group(['prefix' => '/', 'namespace'=>'Front'], function() {
 	Route::get('careers', 'HomeController@careers');
 	Route::get('invoicing', 'HomeController@invoicing');
 	Route::get('privacy-policy', 'HomeController@privacyPolicy');
-	Route::get('terms', 'HomeController@termsConditions');
+	Route::get('terms-conditions', 'HomeController@termsConditions');
 
 	Route::post('subscribe', 'ActionsController@postSubscribe');
 	Route::post('enquiry', 'ActionsController@postEnquiry');

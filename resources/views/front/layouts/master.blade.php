@@ -36,7 +36,7 @@
                 <li {!!Helper::activePage('blog')!!}><a href="{{url('blog')}}">Blog</a></li>
               </ul>
             </nav>
-            <a href="portal.mcledger.co" class="get-started-btn btn btn-login rad scrollto shadow-sm">LOGIN</a>
+            <a href="https://portal.mcledger.co" target="_blank" class="get-started-btn btn btn-login rad scrollto shadow-sm">LOGIN</a>
           </div>
         </div>
       </div>
@@ -114,7 +114,7 @@
           <div class="col-md-5 text-right">
             <div class="credits">
               <a href="{{url('privacy-policy')}}">Privacy Policy</a> <span class="text-secondary">|</span>
-              <a href="{{url('term-conditions')}}">Terms &amp; Conditions</a>
+              <a href="{{url('terms-conditions')}}">Terms &amp; Conditions</a>
             </div>
           </div>
       </div>

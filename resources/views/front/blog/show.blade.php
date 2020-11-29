@@ -10,20 +10,20 @@
 @section('meta_img') {!! Helper::metaImage($item->image) !!} @stop
 @section('meta_keywords') {{str_replace(' ', ',', $item->title)}} @stop
 @section('content')
-<section id="hero" class="d-flex align-items-center about-hero" style="height: 60vh">
-   <div style="width: 50%; height: 60vh; position: absolute; top: 0; right:0; background-color: #eff0ff; border-bottom-left-radius: 50px; z-index: 2; content: ''"></div>
+<section id="hero" class="d-flex align-items-center about-hero blog-hero">
+   <div class="blog_hero_bg"></div>
    <div class="container" data-aos="fade-up" style="z-index: 3;">
       <div class="row justify-content-center pt-5">
          <div class="col-lg-6 order-2 order-lg-2 hero-img p-5" data-aos="zoom-in" data-aos-delay="150">
-            {!!Blog::getImage($item, 'animated mw-100 rounded-lg', false, false)!!}
+            {!!Blog::getImage($item, 'blog-img animated mw-100 rounded-lg', false, false)!!}
          </div>
          <div class="col-lg-6 pt-3 pt-lg-0 order-1 order-lg-1 d-flex flex-column justify-content-center">
-            <h2 class="mb-0">Blog <i class='bx bx-chevron-right bx-flip-vertical' ></i> post</h2>
+            <h2 class="mb-0 text-muted">Blog <i class='bx bx-chevron-right bx-flip-vertical'></i> post</h2>
             <h1 class="mb-5">{{$item->title}}</h1>
             <div class="post_tags mb-3">
-               <a href="{{BlogCategory::url($item->category)}}" class="btn btn-light bg-white">{{$item->category->title}}</a>
-               <div class="btn btn-light bg-white">{{Blog::date($item)}}</div>
-               <div class="btn btn-light bg-white">{{$item->views}} views</div>
+               <a href="{{BlogCategory::url($item->category)}}" class="btn btn-light btn-sm">{{$item->category->title}}</a>
+               <button class="btn btn-light btn-sm">{{Blog::date($item)}}</button>
+               <button class="btn btn-light btn-sm">{{$item->views}} views</button>
             </div>
          </div>
       </div>
@@ -52,7 +52,6 @@
                   @endif
                </div>
                <div class="clearfix"></div>
-               
                <h2 class="title iq-fw-8 mt-5 mb-3">Comments</h2>
                @include('front.blog.commentform' , ['id'=>$item->id, 'model'=>'Blog'])
             </div>

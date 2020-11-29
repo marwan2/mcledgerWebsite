@@ -24,17 +24,17 @@
 
 <div class="comment-form default-form">
     <div class="sidebar-title"><h4>Leave a comment</h4></div>
-    <form method="post" action="{{url('blog/comments')}}">
+    <form method="post" action="{{url('blog/comments')}}" class="contactForm p-3">
         {{csrf_field()}}
         <input type="hidden" value="{{$item->id}}" name="record_id">
         <input type="hidden" value="{{$model}}" name="model">
         <div class="row clearfix">
             <div class="col-md-5 col-sm-6 col-xs-12">
-                <div class="form-group pl-2">
+                <div class="form-group">
                     <div class="field-label">Name</div>
                     {!!Form::text('name', null, ['id'=>'cmnt_name','required'=>'required', 'class'=>'form-control'])!!}
                 </div>
-                <div class="form-group pl-2">
+                <div class="form-group">
                     <div class="field-label">Email</div>
                     {!!Form::email('email', null, ['id'=>'cmnt_email','required'=>'required', 'class'=>'form-control'])!!}
                 </div>
@@ -46,7 +46,7 @@
                 </div>
             </div>
             <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="form-group pl-2">
+                <div class="form-group">
                     <button type="submit" class="btn btn-primary btn_bg hd_cmnt_btn">Submit</button>
                 </div>
             </div>

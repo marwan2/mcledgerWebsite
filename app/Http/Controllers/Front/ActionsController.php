@@ -24,6 +24,7 @@ class ActionsController extends Controller
 
         $form = $req->all();
         $enquiry = Enquiry::create($form);
+        $msg = '';
 
         if($enquiry)
         {
@@ -41,14 +42,19 @@ class ActionsController extends Controller
                 });
             }
             
-            return $this->showOutput('Thanks, we have received your message, and will get back to you soon.');    
+            $msg = 'Thanks, we have received your message, and will get back to you soon.';  
+            if($req->ajax()) {
+                return json_encode(['status'=>200, 'message'=>$msg]);
+            } else {
+                return $this->showOutput($msg);
+            }
         } else {
-            return $this->showOutput('Sorry, error occured', 'danger');
+            $msg = 'Sorry, error occured';
+            return $this->showOutput($msg, 'danger');
         }
     }
 
-    public function showOutput($message='Done', $type='success', $data=[])
-    {
+    public function showOutput($message='Done', $type='success', $data=[]) {
         session()->flash('formSent', 1);
         session()->flash('type', $type);
         session()->flash('message', $message);
@@ -60,7 +66,7 @@ class ActionsController extends Controller
     {
         $message = new Subscriber;
 
-        $check = Subscriber::whereEmail($request->get('email'))->get();
+        $check = Subscriber::whereEmail($request->get('email'))->first();
 
         if($check->count() > 0) {
             if($check->unsubscribed == 1) {
@@ -76,7 +82,7 @@ class ActionsController extends Controller
 
         if($message->create($data)) {
             if($request->ajax()) {
-                return json_encode(['result'=>'success']);
+                return json_encode(['result'=>'success', 'status'=>200]);
             } else {
                 return $this->showOutput('Thanks, you have subscribed successfully');
             }
@@ -88,19 +94,16 @@ class ActionsController extends Controller
         return $this->showOutput('Error occured', 'danger');
     }
 
-    public function getUnsubscribe(Request $req)
-    {
+    public function getUnsubscribe(Request $req) {
         $email = $req->get('email');
         if(!$email) {
             return 'Sorry, email not found';
         }
 
         $subscriber = Subscriber::whereEmail($email)->first();
-        if($subscriber->count() > 0)
-        {
+        if($subscriber->count() > 0) {
             $subscriber->unsubscribed = 1;
-            if($subscriber->save())
-            {
+            if($subscriber->save()) {
                 return 'Thanks, you have unsubscribed successfully from the newsletter';
             }
         }
@@ -122,8 +125,7 @@ class ActionsController extends Controller
         }
 
         $record = JoinRequest::create($data);
-        if($record)
-        {
+        if($record) {
             return $this->showOutput('Thanks, We have successfully received your join request');
         }
 
@@ -143,20 +145,18 @@ class ActionsController extends Controller
         $data['join_as'] = 'client';
 
         $record = JoinRequest::create($data);
-        if($record)
-        {
+        if($record) {
             return $this->showOutput('Thanks, We have successfully received your request');
         }
 
         return 'Error occured';
     }
 
-    public function requestStatus()
-    {
+    public function requestStatus() {
         if(!session()->has('formSent')) {
             return redirect()->to('/');
         }
 
-        return view('front.platform.form_status');
+        return view('front.actions.form_status');
     }
 }

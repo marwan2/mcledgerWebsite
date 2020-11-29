@@ -1,44 +1,4 @@
-@extends('front.layouts.master')
-@section('title') Pricing @stop
-@section('content')
-<section id="hero" class="d-flex align-items-center pricing-hero">
-   <div class="container-fluid" data-aos="fade-up">
-      <div class="row justify-content-center">
-         <div class="col-xl-5 col-lg-5 order-2 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
-            <img src="assets/img/target.png" class="animated" alt="">
-         </div>
-         <div class="col-xl-4 col-lg-5 pt-3 pt-lg-0 order-1 order-lg-1 d-flex flex-column justify-content-center">
-            <h1 class="base_color mb-5">Stop Bookkeeping!​</h1>
-            <!-- <h2 class="mb-0">Check out Plans</h2> -->
-            <p>
-               We’re here to save your accounts and give you the time to do what you love. ​You deserve it.
-            </p>
-            <div><a href="#pricing" class="btn-get-started btn rad scrollto font-weight-bold">Get started today​</a></div>
-         </div>
-      </div>
-   </div>
-</section>
-<main id="main">
-   <section id="features" class="features" style="overflow: visible">
-      <div class="container" data-aos="fade-up">
-         <div class="row whyus_row_op" data-aos="slide-up" data-aos-delay="120" style="overflow: visible;
-            height: 300px; display: flex; align-content: center; border-radius: 30px; ">
-            <div class="col-md-7">
-               <img src="assets/img/invoicing1.png" class="mw-100" alt="..." style="margin-bottom: 0; padding-top: 0;">
-            </div>
-            <div class="col-md-5" style="display: flex;align-content: center;align-items: center;">
-               <div class="media flex-column">
-                  <img src="assets/img/point.png" class="mr-2 mb-4" alt="...">
-                  <div class="media-body">
-                     <h3 class="mt-0 mb-3">Get a dedicated accounting department​</h3>
-                     Bookkeeping should be at the bottom of your priority list. Your dedicated McLedger accountant will take care of everything and will ensure your books are accurate, tax-compliant and audit proof, so you can focus on your business without worrying about fines.​
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-   <?php
+@php
    $reps = [
       "1"=>"Balance sheet​",
       "2"=>"Profit & loss​",
@@ -53,7 +13,46 @@
       "11"=>"Bank reconciliation​",
       "12"=>"Unique report layout",
    ];
-   ?>
+@endphp
+@extends('front.layouts.master')
+@section('title') Pricing - @stop
+@section('content')
+<section id="hero" class="d-flex align-items-center pricing-hero">
+   <div class="container-fluid" data-aos="fade-up">
+      <div class="row justify-content-center">
+         <div class="col-xl-5 col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
+            <img src="assets/img/target.png" class="animated" alt="">
+         </div>
+         <div class="col-xl-4 col-lg-5 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+            <h1 class="base_color mb-5">Stop Bookkeeping!​</h1>
+            <p>
+               We’re here to save your accounts and give you the time to do what you love. ​You deserve it.
+            </p>
+            <div><a href="#pricing" class="btn-get-started btn rad scrollto font-weight-bold">Get started today​</a></div>
+         </div>
+      </div>
+   </div>
+</section>
+<main id="main">
+   <section id="features" class="features pricing_top" style="overflow: visible">
+      <div class="container" data-aos="fade-up">
+         <div class="row whyus_row_op" data-aos="slide-up" data-aos-delay="120">
+            <div class="col-md-7">
+               <img src="assets/img/invoicing1.png" class="mw-100" style="margin-bottom: 0; padding-top: 0;">
+            </div>
+            <div class="col-md-5" style="display: flex;align-content: center;align-items: center;">
+               <div class="media flex-column">
+                  <img src="assets/img/point.png" class="mr-2 mb-4" alt="...">
+                  <div class="media-body">
+                     <h3 class="mt-0 mb-3">Get a dedicated accounting department​</h3>
+                     Bookkeeping should be at the bottom of your priority list. Your dedicated McLedger accountant will take care of everything and will ensure your books are accurate, tax-compliant and audit proof, so you can focus on your business without worrying about fines.​
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
    <section id="finreports" class="features mt-5" style="overflow: visible">
       <div class="container" data-aos="fade-up">
          <div class="row" data-aos="slide-up" data-aos-delay="120" style="border-radius: 30px;">
@@ -64,16 +63,16 @@
                </div>
                
                <div class="row statistics_cards business_cards">
-                  <?php foreach($reps as $rep): ?>
+                  @foreach($reps as $index=>$rep)
                   <div class="col-md-3 col-6 stat_col h-auto">
                      <div class="card" data-aos="slide-up" data-aos-delay="110">
                         <div class="card-body">
-                           <div class="bs_img"><img src="assets/img/chart2.png" style="width: 70%;"></div>
-                           <div class="business_type"><?=$rep?></div>
+                           <div class="bs_img"><img src="assets/img/reps/{{$index}}.png" style="width: 70%;"></div>
+                           <div class="business_type">{{$rep}}</div>
                         </div>
                      </div>
                   </div>
-                  <?php endforeach; ?>
+                  @endforeach
                </div>
             </div>
          </div>
@@ -150,7 +149,7 @@
                   </div>
                </div>
             </div>
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="50">
                <div class="box pricing_box">
                   <div class="contents">
                      <h3>VAT Registration</h3>

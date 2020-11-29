@@ -90,7 +90,7 @@
           <div class="card-deck p-2">
             <div class="card rounded-lg p-4">
               <a href="#">
-                <img src="assets/img/feature2.png" class="card-img-top" alt="...">
+                <img src="assets/img/feature2.png" class="card-img-top" alt="MCLEDGER ACCOUNTING">
               </a>
               <div class="card-body">
                 <h5 class="card-title">MCLEDGER ACCOUNTING</h5>
@@ -104,8 +104,8 @@
         <div class="col-lg-6 col-md-6" data-aos="slide-down" data-aos-delay="100">
           <div class="card-deck p-2 apps_card_down">
             <div class="card rounded-lg p-4">
-              <a href="#">
-                <img src="assets/img/feature1.png" class="card-img-top" alt="...">
+              <a href="{{url('invoicing')}}">
+                <img src="assets/img/feature1.png" class="card-img-top" alt="MCLEDGER REVENUE MANAGEMENT SYSTEM">
               </a>
               <div class="card-body">
                 <h5 class="card-title">MCLEDGER REVENUE MANAGEMENT SYSTEM</h5>
@@ -137,7 +137,7 @@
           </p>
         </div>
       </div>
-      <div class="row whyus_row fin_reports" data-aos="slide-up" data-aos-delay="110">
+      <div class="row whyus_row fin_reports" data-aos="slide-up" data-aos-delay="100">
         <div class="col-md-12">
           <div class="media">
             <img src="assets/img/point.png" class="mr-2 mt-2 point_img">
@@ -165,9 +165,9 @@
     </div>
   </section>
   <section id="sub-features" class="sub-features pb-0">
-    <div class="container" data-aos="fade-up">
+    <div class="container">
       <div class="row">
-        <div class="col-lg-6 col-md-6" data-aos="slide-up" data-aos-delay="100">
+        <div class="col-lg-6 col-md-6" data-aos="slide-up">
           <div class="card-deck p-2">
             <div class="card rounded-lg p-4">
               <img src="assets/img/conversion.png" class="" alt="...">
@@ -180,7 +180,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6 col-md-6" data-aos="slide-down" data-aos-delay="100">
+        <div class="col-lg-6 col-md-6" data-aos="slide-down">
           <div class="card-deck p-2">
             <div class="card rounded-lg p-4">
               <img src="assets/img/notifications.png" class="" alt="...">
@@ -334,7 +334,8 @@
               <div class="card-body">
                 <h3>Let’s keep you posted!</h3>
                 <p>Subscribe to stay updated on the latest news and tips.</p>
-                <form action="subscribe" method="post" role="form" class="php-email-form pt-4">
+                <form action="{{url('subscribe')}}" method="post" role="form" class="php-email-form pt-4">
+                  @csrf
                   <div class="form-row">
                     <div class="col-md-12 form-group">
                       <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -379,7 +380,8 @@
             </div>
             <div class="row">
               <div class="col-md-12">
-                <form action="forms/contact.php" method="post" role="form" class="php-email-form contactForm">
+                <form action="{{url('enquiry')}}" method="POST" role="form" class="php-email-form contactForm">
+                  @csrf
                   <h3>Contact Us</h3>
                   <div class="form-row">
                     <div class="col-md-6 form-group">
@@ -417,7 +419,7 @@
                 <p>
                   Read up on guides, tutorials and get answers to most questions 24/7
                 </p>
-                <a href="faq.php" class="btn btn-light btn-block rad">Visit Help Center</a>
+                <a href="{{url('faq')}}" class="btn btn-light btn-block rad">Visit Help Center</a>
               </div>
             </div>
           </div>

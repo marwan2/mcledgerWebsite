@@ -1,4 +1,4 @@
-<section id="faq" class="faq">
+<section id="faq" class="faq faq_summary">
    <div class="container" data-aos="fade-up">
       <div class="card mc-card">
          <div class="card-body">
@@ -9,11 +9,11 @@
             <div class="faq-list">
                <ul>
                   @foreach(array_slice(App\Faq::$faqs_arr, 0, 5) as $index=>$row)
-                  <li data-aos="fade-up" data-aos="fade-up" data-aos-delay="100">
+                  <li data-aos="fade-up" data-aos="fade-up" data-aos-delay="50">
                      <a data-toggle="collapse" class="collapse q_content" href="#faq-list-{{$index}}">
                         {{$row['qa']}}
                         <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                     <div id="faq-list-{{$index}}" class="collapse show" data-parent=".faq-list">
+                     <div id="faq-list-{{$index}}" class="collapse" data-parent=".faq-list">
                         <p>{!! $row['ans'] !!}</p>
                      </div>
                   </li>
