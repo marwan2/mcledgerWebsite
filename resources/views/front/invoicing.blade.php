@@ -1,5 +1,9 @@
 @extends('front.layouts.master')
-@section('title') McLedger Revenue Management System - @stop
+@section('title', 'Invoicing - ')
+@section('meta_desc', 'Our VAT invoicing software enables quick payments for SMEs and startups in the UAE, and comes free with our bookkeeping services.')
+@section('meta_keywords', 'sales order, credit note, delivery note, SMEs in uae, dubai, invoice, invoice generator, tax invoicing, quick payments, receipts') 
+@section('og_title', 'Invoicing')
+
 @section('content')
 <section id="hero" class="d-flex align-items-center invoicing-hero">
   <div class="container-fluid" data-aos="fade-up">
@@ -7,7 +11,7 @@
       <div class="col-xl-12 col-lg-12 pt-4 mt-4 mb-3 pt-lg-0 order-1 order-lg-1 d-flex flex-column justify-content-center">
         <h1 class="mb-1">The ultimate invoicing  <br>software for your business​</h1>
         <p class="mb-5">The simplest way to manage VAT compliant tax invoices for quick payments​</p>
-        <div><a href="{{url('pricing')}}" class="btn btn-light rad scrollto">START TRIAL FOR FREE</a></div>
+        <div><a href="{{$trial_url}}" class="btn btn-light rad scrollto">START TRIAL FOR FREE</a></div>
       </div>
       <div class="col-xl-7 col-lg-7 order-2 order-lg-2 text-center mt-3" data-aos="zoom-in" data-aos-delay="150">
         <img src="assets/img/invoicing_hero_img.png" class="animated mw-100 w-100" alt="">
@@ -99,7 +103,7 @@
         <div class="col-md-7 col-12">
           <div class="whyus_row_op text-center" style="padding: 60px 20px; border-radius: 100px;">
             <h4>Join our community today!</h4>
-            <a href="#" class="btn btn_bg btn-dark border-0 btn-lg pl-5 pr-5 font-weight-bold mt-2">START TRIAL FOR FREE</a>
+            <a href="{{$trial_url}}" class="btn btn_bg btn-dark border-0 btn-lg pl-5 pr-5 font-weight-bold mt-2">START TRIAL FOR FREE</a>
           </div>
         </div>
       </div>

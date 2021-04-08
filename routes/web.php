@@ -52,6 +52,7 @@ Route::group(['prefix' => '/', 'namespace'=>'Front'], function() {
 	Route::get('contact', 'HomeController@contact');
 	Route::get('faq', 'HomeController@faq');
 	Route::get('app', 'HomeController@app');
+	Route::get('qr', 'HomeController@qr');
 	Route::get('clients', 'HomeController@clients');
 	Route::get('careers', 'HomeController@careers');
 	Route::get('invoicing', 'HomeController@invoicing');

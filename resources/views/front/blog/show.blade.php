@@ -18,7 +18,7 @@
             {!!Blog::getImage($item, 'blog-img animated mw-100 rounded-lg', false, false)!!}
          </div>
          <div class="col-lg-6 pt-3 pt-lg-0 order-1 order-lg-1 d-flex flex-column justify-content-center">
-            <h2 class="mb-0 text-muted">Blog <i class='bx bx-chevron-right bx-flip-vertical'></i> post</h2>
+            <h5 class="mb-0 text-muted">Blog <i class='bx bx-chevron-right bx-flip-vertical'></i> post</h5>
             <h1 class="mb-5">{{$item->title}}</h1>
             <div class="post_tags mb-3">
                <a href="{{BlogCategory::url($item->category)}}" class="btn btn-light btn-sm">{{$item->category->title}}</a>
@@ -32,15 +32,15 @@
 <main id="main">
    <section class="blog_tags_search pt-0">
       <div class="container">
-         <div class="row">
-            <div class="col-md-8">
-               <div class="post_details mt-5"> 
+         <div class="row mt-5">
+            <div class="col-md-9">
+               <div class="post_details"> 
                   {!! $item->details !!}
                </div>
                <div class="blog-finding">
                   <ul class="d-inline-block float-right">
-                     <li class="d-inline-block mr-3"><a href="javascript:void(0)"><i class="far fa-thumbs-up"></i> <span class="iq-fw-6">{{$item->likes}}</span></a></li>
-                     <li class="d-inline-block"><a href="javascript:void(0)" title="Comments"><i class="bx bx-comment"></i> <span class="iq-fw-6">{{$item->comments_count}}</span></a></li>
+                     {{-- <li class="d-inline-block mr-3"><a href="javascript:void(0)"><i class="far fa-thumbs-up"></i> <span class="iq-fw-6">{{$item->likes}}</span></a></li> --}}
+                     {{-- <li class="d-inline-block"><a href="javascript:void(0)" title="Comments"><i class="bx bx-comment"></i> <span class="iq-fw-6">{{$item->comments_count}}</span></a></li> --}}
                   </ul>
                   @if($item->tags)
                      <h5 class="mt-5">Keywords: </h5>
@@ -52,9 +52,12 @@
                   @endif
                </div>
                <div class="clearfix"></div>
-               <h2 class="title iq-fw-8 mt-5 mb-3">Comments</h2>
+               <h2 class="title iq-fw-8 mt-5 mb-3">Comments
+                  {{-- <small><a href="javascript:void(0)" title="Comments"><i class="bx bx-comment"></i> <span class="iq-fw-6">{{$item->comments_count}}</span></a></small> --}}
+               </h2>
                @include('front.blog.commentform' , ['id'=>$item->id, 'model'=>'Blog'])
             </div>
+            @include('front.blog.sidebar')
          </div>
       </div>
    </section>

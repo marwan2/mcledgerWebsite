@@ -33,7 +33,11 @@
    }
 @endphp
 @extends('front.layouts.master')
-@section('title') How it works @stop
+@section('title', 'How We Work - ')
+@section('meta_desc', 'Just register with us for a smooth onboarding process by senior accountant who will assist your business to switch to our online accounting services. ')
+@section('meta_keywords', 'transactions, onboarding, sign up, free demo, online bookkeeping, vat consultation, financial consulting, accountant') 
+@section('og_title', 'How We Work')
+
 @section('content')
 <section id="hero" class="d-flex align-items-center about-hero">
 <div class="howworks_bg"></div>
@@ -168,7 +172,7 @@
          <div class="col-md-7 col-12">
             <div class="whyus_row_op text-center" style="padding: 60px 20px; border-radius: 100px;">
                <h4>Join our community today!</h4>
-               <a href="#" class="btn btn_bg btn-dark border-0 btn-lg pl-5 pr-5 font-weight-bold mt-2">START TRIAL FOR FREE</a>
+               <a href="{{$trial_url}}" class="btn btn_bg btn-dark border-0 btn-lg pl-5 pr-5 font-weight-bold mt-2">START TRIAL FOR FREE</a>
             </div>
          </div>
       </div>

@@ -20,6 +20,15 @@
             <h3 class="mb-5">Search results for keyword: 
                 <div class="badge badge-dark badge-pill">{{Request::get('q')}}</div>
             </h3>
+            
+            <form action="{{url('blog/search')}}" method="GET" class="searchBlogForm">
+              <div class="input-group blog_search">
+                <input type="text" name="q" value="{{Request::get('q')}}" class="form-control" placeholder="Search articles" aria-label="Search" aria-describedby="btnSearch">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-primary" type="submit" id="btnSearch"><i class="bx bx-search"></i></button>
+                </div>
+              </div>
+            </form>
         </div>
       </div>
     </div>

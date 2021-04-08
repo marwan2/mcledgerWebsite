@@ -10,6 +10,8 @@ class Enquiry extends Model
 {
     protected $guarded = [];
 
+    public static $to_mail = 'customerservice@mcledger.co';
+
     public function replies() {
         return $this->hasMany(EnquiryReply::class);
     }

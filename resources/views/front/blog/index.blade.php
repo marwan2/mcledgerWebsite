@@ -4,7 +4,11 @@
     use App\BlogCategory;
 @endphp
 @extends('front.layouts.master')
-@section('title') Blog - @endsection
+@section('title', 'Blog - ')
+@section('meta_desc', 'Stay updated on tips, advice, key insights, & latest news on accounting, bookkeeping, & VAT for UAE SMEs.')
+@section('meta_keywords', 'UAE SME, bookkeeping, tax, value added service, tips, latest news, industry news, advice, blogs ') 
+@section('og_title', 'Blog')
+
 @section('content')
   <section id="hero" class="d-flex align-items-center about-hero blog-hero">
     <div class="blog_hero_bg"></div>
@@ -31,7 +35,7 @@
             @endforeach
           </div>
           <div class="col-md-3">
-            <form action="{{url('blog/search')}}" method="GET">
+            <form action="{{url('blog/search')}}" method="GET" class="searchBlogForm">
               <div class="input-group blog_search">
                 <input type="text" name="q" class="form-control" placeholder="Search articles" aria-label="Search" aria-describedby="btnSearch">
                 <div class="input-group-append">

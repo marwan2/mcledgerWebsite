@@ -10,12 +10,18 @@ use App\Settings;
 use App\Subscriber;
 use App\JoinRequest;
 use Mail;
+use App\Mail\ContactMessageSent;
 
-class ActionsController extends Controller
+class ActionsController extends InitController
 {
+    public function __construct() {
+        parent::__construct();
+    }
+
     public function postEnquiry(Request $req)
     {
-        $sendmail = false;
+        $sendmail = true;
+
         $this->validate($req, [
             'name'=>'required',
             'email'=>'required|email',
@@ -28,18 +34,12 @@ class ActionsController extends Controller
 
         if($enquiry)
         {
-            if($sendmail)
-            {
-                $view = 'front.mails.enquiry_admin';
-                $data = ['enquiry'=>$enquiry];
+            if($sendmail) {
                 $subject = 'New Enquiry from Website';
-                $email_to = Settings::fetch('email_to',$this->settings['mail']);
-                $name_to = Settings::fetch('email_name',$this->settings['mail']);
-    
-                Mail::send($view, $data, function($message) use($email_to,$name_to,$subject) {
-                    $message->to($email_to, $name_to)
-                    ->subject($subject);
-                });
+                $email_to = Settings::fetch('email_to', $this->settings['mail']);
+
+                //Send to admin
+                Mail::to($email_to)->send(new ContactMessageSent($enquiry));
             }
             
             $msg = 'Thanks, we have received your message, and will get back to you soon.';  

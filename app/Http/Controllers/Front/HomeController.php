@@ -6,8 +6,12 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Blog;
 
-class HomeController extends Controller
+class HomeController extends InitController
 {
+    public function __construct() {
+        parent::__construct();
+    }
+
     public function index() {
         //$blog = Blog::whereActive(1)->with('category', 'author')->withCount('comments')->orderBy('id', 'DESC')->take(6)->get();
         return view('front.index');
@@ -83,6 +87,10 @@ class HomeController extends Controller
         }
 
         return 'Sorry cannot detect your browser';
+    }
+
+    public function qr() {
+        return $this->app();
     }
 
 }

@@ -75,7 +75,7 @@
               </a>
               <div class="dropdown-list dropdown-menu shadow animated--grow-in" aria-labelledby="alertsDropdown">
                 <h6 class="dropdown-header">
-                  @lang('site.notifications')
+                  Notifications
                 </h6>
                 <a class="dropdown-item text-center small text-gray-500" href="#">@lang('site.all_notific')</a>
               </div>
@@ -89,7 +89,7 @@
 
             <li class="nav-item dropdown mr-auto no-arrow">
                 <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span class="mr-2 d-none d-lg-inline text-gray-600 small"> @lang('site.welcome'), {{ Auth::user()->name }} </span>
+                    <span class="mr-2 d-none d-lg-inline text-gray-600 small"> Welcome, {{ Auth::user()->name }} </span>
                   @if(auth()->user()->image)
                     {{Helper::image2(auth()->user()->image, ['class'=>'img-profile rounded-circle'])}}
                   @endif

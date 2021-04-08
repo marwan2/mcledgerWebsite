@@ -15,7 +15,11 @@
    ];
 @endphp
 @extends('front.layouts.master')
-@section('title') Pricing - @stop
+@section('title', 'Bookkeeping Pricing Packages - ')
+@section('meta_desc', 'From full bookkeeping, financial statements, invoicing to VAT registration & VAT filing, find the accounting service that fits your budget. ')
+@section('meta_keywords', 'bookkeeping, financial statement, sign up, free trial, invoicing, vat service, vat return, vat filing, vat registration, accounting, budget ') 
+@section('og_title', 'Bookkeeping Pricing Packages')
+
 @section('content')
 <section id="hero" class="d-flex align-items-center pricing-hero">
    <div class="container-fluid" data-aos="fade-up">
@@ -87,8 +91,8 @@
                   Our dedicated team of professional accountants ensure all your records are vat-compliant and file your value added tax (VAT) return on Federal tax authority (FTA) portal for each period while updating you and following up till the end.​
                </p>
             </div>
-            <div class="col-md-7" data-aos="slide-up" data-aos-delay="110">
-               <img src="assets/img/about.jpg" class="mw-100">
+            <div class="col-md-6" data-aos="slide-up" data-aos-delay="110">
+               <img src="assets/img/pricing_vatfiling.jpg" class="mw-100">
             </div>
          </div>
       </div>

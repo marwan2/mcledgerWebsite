@@ -8,8 +8,9 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>@yield('title') McLedger – Online bookkeeping services for small businesses​</title>
     <meta name="description" content="@yield('meta_desc')">
-    <meta property="og:image" content="@yield('meta_img')">
     <meta name="keywords" content="@yield('meta_keywords')">
+    <meta property="og:image" content="@yield('meta_img')">
+    <meta property=”og:title” content="@yield('og_title')" />
     <link href="{{url('assets/img/favicon.png')}}" rel="icon">
     <link href="{{url('assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
     <link href="{{url('assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -51,7 +52,7 @@
             <p>
               Ready to stop wasting time on tasks and start spending it on scaling, growth and delivering superior service?
               <br><br>
-              <a href="#" class="btn btn-primary btn_bg btn-block">START TRIAL FOR FREE</a>
+              <a href="{{$trial_url}}" class="btn btn-primary btn_bg btn-block">START TRIAL FOR FREE</a>
             </p>
           </div>
           <div class="col-lg-9">
@@ -68,7 +69,7 @@
               <div class="col-lg-3 col-md-6 footer-links">
                 <h4>McLedger Apps</h4>
                 <ul>
-                  <li><i class="bx bx-chevron-right"></i> <a href="{{url('about')}}">McLedger</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="{{url('/#why-mc-accounting')}}">McLedger Accounting</a></li>
                   <li><i class="bx bx-chevron-right"></i> <a href="{{url('invoicing')}}">Accounting Invoicing</a></li>
                 </ul>
               </div>
@@ -97,15 +98,15 @@
       <div class="row copyright-wrap d-md-flex py-4">
           <div class="col-md-6 mr-md-auto text-center text-md-left">
             <div class="copyright">
-              &copy 2020 All Rights Reserved by McLedger Accounting LLC.
+              &copy 2021 All Rights Reserved by McLedger Accounting LLC.
             </div>
             <div class="social-links text-left pt-3 pt-md-0 mt-2">
-              <a href="https://twitter.com/McLedgeruae" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="https://www.facebook.com/mcledgeruae" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="https://www.linkedin.com/company/mcledgeruae" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-              <a href="https://www.instagram.com/mcledger" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="https://www.youtube.com/channel/UCESjMRV5uRKWWAjuYMTVXjA" class="youtube"><i class="bx bxl-youtube"></i></a>
-              <a href="https://api.whatsapp.com/send?phone=971565224041&data=AbsNf_lklFFwO5Uii96mL9ydHpz2EqPz1ikBiEtOmIv4L-72PadHom4kNKj7g3NlwXAbbIhBqIpDtcUEAg98YQpaJhYzNybr75Weo8AiW7ZLqlOTvVWa_H7zR2i4yqorvX8&source=FB_Ads" class="whats-app"><i class="bx bxl-whatsapp"></i></a>
+              <a target="_blank" href="https://twitter.com/McLedgeruae" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a target="_blank" href="https://www.facebook.com/mcledgeruae" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a target="_blank" href="https://www.linkedin.com/company/mcledgeruae" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              <a target="_blank" href="https://www.instagram.com/mcledger" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a target="_blank" href="https://www.youtube.com/channel/UCESjMRV5uRKWWAjuYMTVXjA" class="youtube"><i class="bx bxl-youtube"></i></a>
+              <a target="_blank" href="https://api.whatsapp.com/send?phone=971565224041&data=AbsNf_lklFFwO5Uii96mL9ydHpz2EqPz1ikBiEtOmIv4L-72PadHom4kNKj7g3NlwXAbbIhBqIpDtcUEAg98YQpaJhYzNybr75Weo8AiW7ZLqlOTvVWa_H7zR2i4yqorvX8&source=FB_Ads" class="whats-app"><i class="bx bxl-whatsapp"></i></a>
             </div>
           </div>
           <div class="col-md-1 footer_icon">
@@ -127,10 +128,8 @@
       </div>
     </div>
   </footer>
-
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
   <div id="preloader"></div>
-
   <script src="{{url('assets/vendor/jquery/jquery.min.js')}}"></script>
   <script src="{{url('assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
   <script src="{{url('assets/vendor/jquery.easing/jquery.easing.min.js')}}"></script>
@@ -143,4 +142,11 @@
   <script src="{{url('assets/vendor/aos/aos.js')}}"></script>
   <script src="{{url('assets/js/main.js')}}"></script>
   @yield('scripts')
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167086118-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-167086118-1');
+  </script>
 </body></html>

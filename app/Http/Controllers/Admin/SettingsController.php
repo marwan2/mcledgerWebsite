@@ -44,9 +44,9 @@ class SettingsController extends InitController
             $result = Settings::save_settings($settings);
             if( $result ) {
                 \Cache::forget('settings');
-                Session::flash('flash_message', 'لقد تم حفظ اﻹعدادات بنجاح');
+                Session::flash('flash_message', 'Settings saved successfully');
             } else {
-                Session::flash('flash_message', 'عفوا هناك خطأ ما حدث اثناء تنفيذ هذا اﻷمر');
+                Session::flash('flash_message', 'Error occured');
             }
         }
         return Redirect::back();

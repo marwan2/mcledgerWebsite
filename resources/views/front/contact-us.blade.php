@@ -1,5 +1,9 @@
 @extends('front.layouts.master')
 @section('title') Contact Us - @stop
+@section('meta_desc', 'Get in touch with us for reliable online accounting and VAT services that come with free invoicing software.')
+@section('meta_keywords', 'online accounting, accounting and bookkeeping, invoicing, invoicing software, vat services') 
+@section('og_title', 'Contact Us')
+
 @section('content')
 <section id="hero" class="d-flex align-items-center about-hero contact_hero">
    <div class="contact_bg"></div>
@@ -79,7 +83,7 @@
                         <div class="col-md-12">
                            <div class="info-box mb-0">
                               <i class="bx bx-phone-call"></i>
-                              <p>+971 56 522 4041​</p>
+                              <p>+971 56 547 2460</p>
                            </div>
                         </div>
                      </div>

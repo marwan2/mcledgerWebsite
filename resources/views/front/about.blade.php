@@ -1,5 +1,8 @@
 @extends('front.layouts.master')
 @section('title') About Us - @stop
+@section('meta_desc', 'From full bookkeeping, financial statements, invoicing to VAT registration & VAT filing, find the accounting service that fits your budget. ')
+@section('meta_keywords', 'bookkeeping, financial statement, sign up, free trial, invoicing, vat service, vat return, vat filing, vat registration, accounting, budget ') 
+@section('og_title', 'Online bookkeeping services for small businesses​')
 @section('content')
   <section id="hero" class="d-flex align-items-center about-hero">
     <div class="about_bg"></div>
@@ -169,7 +172,7 @@
           <div class="col-md-7 col-12">
             <div class="whyus_row_op text-center" style="padding: 60px 20px; border-radius: 100px;">
               <h4>Join our community today!</h4>
-              <a href="#" class="btn btn_bg btn-dark border-0 btn-lg pl-5 pr-5 font-weight-bold mt-2">START TRIAL FOR FREE</a>
+              <a href="{{$trial_url}}" class="btn btn_bg btn-dark border-0 btn-lg pl-5 pr-5 font-weight-bold mt-2">START TRIAL FOR FREE</a>
             </div>
         </div>
       </div>
