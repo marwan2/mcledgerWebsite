@@ -61,7 +61,15 @@
         </p>
         <div class="badge badge-light bg-white text-left mb-1 rounded-lg">Save up to
           <span class="text-info">85%</span> of your accounting cost Today!</div>
-          <div><a href="{{$trial_url}}" class="btn-get-started btn rad scrollto font-weight-bold">START TRIAL FOR FREE</a></div>
+          <div class="d-flex mt-2">
+            <a href="{{$trial_url}}" class="btn-get-started btn rad scrollto font-weight-bold mt-0 d-flex align-items-center">START TRIAL FOR FREE</a>
+            <a href="https://calendly.com/mcledger/" target="_blank" class="btn-dark btn-booking btn ml-2 rad scrollto d-flex align-items-center">
+              <div class="d-flex"><i class="bx bx-calendar bx-md text-white"></i></div>
+              <div class="text-left pl-2" style="line-height: 17px;"><span class="font-weight-normal" style="font-size: 12px;">Book an</span><br> 
+                <span class="font-weight-bold text-uppercase">appointment</span>
+              </div>
+            </a>
+            </div>
         </div>
       </div>
     </div>

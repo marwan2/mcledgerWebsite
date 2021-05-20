@@ -497,6 +497,7 @@ ol.reg_steps li.st4::before {content: '4';}
 .inv_feature1 { overflow: visible; height: 300px; display: flex; align-content: center; border-radius: 30px; margin-bottom: 320px; }
 .faq-hero { height: 60vh; }
 .faq_bg { width: 50%; height: 60vh; position: absolute; top: 0; right:0; background-color: #edffff; border-bottom-left-radius: 50px; z-index: 2; content: ''; }
+.btn-booking { background-color: #a863b6; border-color: #a863b6; }
 @media (max-width: 575px) {
 	body { font-size: 14px; }
 	.btn-group-lg > .btn, .btn-lg { font-size: 1.10rem; }
