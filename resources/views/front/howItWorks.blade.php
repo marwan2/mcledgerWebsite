@@ -16,7 +16,9 @@
       'Increased Security'=>[1,1,0,'N/A'],
       'No Cancellation Fees'=>[1,0,0,0],
       'Transaction Based Pricing'=>[1,0,0,0],
-      'E-commerce'=>[1,0,0,0],
+      'E-commerce integration 
+      <img src="'.url('assets/img/shopify_amazon_logo.png').'" class="integration_logo" alt="Shopify | Amazon" />
+      '=>[1,0,0,0],
    ];
 
    function get_feature($val) {
@@ -120,7 +122,7 @@
                         <ul>
                            <li class="header">Item</li>
                            @foreach ($featuresTable as $label => $vars)
-                           <li>{{ $label }}</li>
+                           <li>{!! $label !!}</li>
                            @endforeach
                         </ul>
                      </div>

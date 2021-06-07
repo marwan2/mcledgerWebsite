@@ -426,7 +426,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f2f3ff",endCo
 .compare_table .compare_cols ul { background: #fff; border-radius: 20px; }
 .compare_table .compare_items ul, .compare_table .compare_cols ul { padding: 20px 0 20px;	 margin: 0; }
 .compare_table .compare_items ul li, .compare_table .compare_cols ul li { height: 50px; margin: 0; padding: 0px 5px; list-style-type: none; margin-bottom: 10px; display: flex; justify-content: center; align-items: center }
-.compare_table .compare_items ul li { background: #fff; border-top-left-radius: 20px; border-bottom-left-radius: 20px; text-align: left; justify-content: start; padding-left: 15px; }
+.compare_table .compare_items ul li { background: #fff; border-top-left-radius: 20px; border-bottom-left-radius: 20px; text-align: left; justify-content: space-between; align-items: center; padding-left: 15px; }
+.compare_table .compare_items .integration_logo { max-height: 28px; margin-right: 10px; }
 .compare_table .compare_items ul li.header { background-color: transparent; }
 .compare_table .compare_cols ul li.header, .get-started-btn{ font-family: MontBold; }
 .compare_table .compare_cols ul li { text-align: center; }
