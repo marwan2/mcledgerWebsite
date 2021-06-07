@@ -59,8 +59,16 @@
           Complete <strong>accounting</strong>, <strong>bookkeeping</strong>,
           and <strong>VAT services</strong> for <strong>UAE</strong> entrepreneurs​
         </p>
-        <div class="badge badge-light bg-white text-left mb-1 rounded-lg">Save up to
-          <span class="text-info">85%</span> of your accounting cost Today!</div>
+        {{-- <div class="badge badge-light text-left mb-1 rounded-lg"></div> --}}
+          <div class="promotion_text">
+            <div class="promo_line1">
+              Save up to
+            </div>
+            <div class="promo_percent"><b>85</b> <span>% <br><div class="of_text">of</div></span></div>
+            <div class="promo_line2">your <span>accounting cost</span> Today!</div>
+          </div>
+        
+
           <div class="d-flex mt-2">
             <a href="{{$trial_url}}" class="btn-get-started btn rad scrollto font-weight-bold mt-0 d-flex align-items-center">START TRIAL FOR FREE</a>
             <a href="https://calendly.com/mcledger/" target="_blank" class="btn-dark btn-booking btn ml-2 rad scrollto d-flex align-items-center">
@@ -427,7 +435,7 @@
               <div class="col-lg-6 col-md-6">
                 <div class="info-box mb-4">
                   <i class="bx bx-phone-call"></i>
-                  <p>+971 56 547 2460</p>
+                  <p>+971 56 547 2460 <br> +971 43 42 5577</p>
                 </div>
               </div>
             </div>

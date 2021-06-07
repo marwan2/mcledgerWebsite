@@ -83,7 +83,8 @@
                         <div class="col-md-12">
                            <div class="info-box mb-0">
                               <i class="bx bx-phone-call"></i>
-                              <p>+971 56 547 2460</p>
+                              <p>+971 56 547 2460 <br>
+                              +971 43 42 5577</p>
                            </div>
                         </div>
                      </div>

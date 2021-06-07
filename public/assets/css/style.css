@@ -362,7 +362,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
 .fin_reports .media-body, .cat_trans .media-body { padding: 40px 0px 20px 15px; }
 .cat_trans .media-body { min-width: 350px; }
 .fin_reports .media-body { min-width: 380px; }
-.fin_reports img, .cat_trans img { margin-bottom: -60px; padding-top: 30px; }
+.fin_reports img, .cat_trans img { margin-bottom: -60px; padding-top: 30px; max-width: 670px !important; }
 .cat_trans { margin-bottom: 100px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; }
 .sub-features .card img { width: 338px !important; height: initial; max-width: initial !important; margin-top: -47px; }
 .sub-features .card { text-align: center; border: none; background-color: #f4f5f7; display: flex; align-items: center }
@@ -498,6 +498,14 @@ ol.reg_steps li.st4::before {content: '4';}
 .faq-hero { height: 60vh; }
 .faq_bg { width: 50%; height: 60vh; position: absolute; top: 0; right:0; background-color: #edffff; border-bottom-left-radius: 50px; z-index: 2; content: ''; }
 .btn-booking { background-color: #a863b6; border-color: #a863b6; }
+.promotion_text { display: flex; justify-content: center; flex-wrap: wrap; flex-direction: column; margin-bottom: 20px; }
+.promo_line1 { display: flex; align-items: center; font-size: 17px; }
+.promo_line1:before { border-top: 1px solid #f0f0f0; width: 100%; content: ' '; position: absolute; top: 45%; }
+.promo_percent { font-size: 65px; font-weight: 700; color: #d700f9; font-family: MontBold; line-height: 0.8; display: flex; align-items: end; }
+.promo_percent span { font-size: 26px; font-weight: 400; font-family: MontLight; }
+.of_text { font-style: italic; font-size: 18px; color: #333; margin: 5px 0; }
+.promo_line2 { display: flex; align-items: center; font-size: 16px; }
+.promo_line2 span { font-weight: 700; color: #46a2ff; font-size: 18px; display: inline-block; padding: 0 3px; line-height: 0.6; }
 @media (max-width: 575px) {
 	body { font-size: 14px; }
 	.btn-group-lg > .btn, .btn-lg { font-size: 1.10rem; }

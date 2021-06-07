@@ -16,6 +16,7 @@
       'Increased Security'=>[1,1,0,'N/A'],
       'No Cancellation Fees'=>[1,0,0,0],
       'Transaction Based Pricing'=>[1,0,0,0],
+      'E-commerce'=>[1,0,0,0],
    ];
 
    function get_feature($val) {
@@ -45,7 +46,7 @@
    <div class="row justify-content-center pt-1">
       <div class="col-lg-5 pt-0 pt-lg-0 order-2 order-lg-2 d-flex flex-column justify-content-center">
          <h2 class="mb-0">How it works</h2>
-         <h1 class="base_color mb-5">Making accounting effortless for you​.</h1>
+         <h1 class="base_color mb-5">Making accounting effortless for you.</h1>
       </div>
       <div class="col-lg-7 order-1 order-lg-1 hero-img" data-aos="zoom-in" data-aos-delay="120">
          <img src="{{url('assets/img/how_hero.png')}}" class="mw-100 how_hero_img" alt="How it works">
@@ -65,15 +66,15 @@
                <ol class="reg_steps">
                   <li data-aos="slide-up" data-aos-delay="120">
                      <h4>Register</h4>
-                     <p>Give us a call to register or do it through our apps​</p>
+                     <p>Give us a call to register or do it through our apps</p>
                   </li>
                   <li data-aos="slide-up" data-aos-delay="120">
                      <h4>On boarding</h4>
-                     <p>Our expert accountant will visit for business account setup, ensure all data is collected, & follow up throughout the first two months of client experience ​</p>
+                     <p>Our expert accountant will visit for business account setup, ensure all data is collected, & follow up throughout the first two months of client experience</p>
                   </li>
                   <li data-aos="slide-up" data-aos-delay="120">
                      <h4>Activate business</h4>
-                     <p>Each business is reviewed individually and activated accordingly​</p>
+                     <p>Each business is reviewed individually and activated accordingly</p>
                   </li>
                </ol>
             </div>
@@ -118,9 +119,9 @@
                      <div class="col-md-5 col-4  pr-0 compare_items">
                         <ul>
                            <li class="header">Item</li>
-                           <?php foreach ($featuresTable as $label => $vars): ?>
+                           @foreach ($featuresTable as $label => $vars)
                            <li>{{ $label }}</li>
-                           <?php endforeach; ?>
+                           @endforeach
                         </ul>
                      </div>
                      <div class="col-md-7 col-8 pl-0">
@@ -128,33 +129,33 @@
                            <div class="col-md-3 col-3">
                               <ul class="bg mc_col">
                                  <li class="header">McLedger</li>
-                                 <?php foreach ($featuresTable as $label => $vars): ?>
-                                 <li><?= get_feature($vars[0]) ?></li>
-                                 <?php endforeach; ?>
+                                 @foreach ($featuresTable as $label => $vars)
+                                 <li>{!! get_feature($vars[0]) !!}</li>
+                                 @endforeach
                               </ul>
                            </div>
                            <div class="col-md-3 col-3">
                               <ul>
                                  <li class="header">In-House</li>
-                                 <?php foreach ($featuresTable as $label => $vars): ?>
-                                 <li><?= get_feature($vars[1]) ?></li>
-                                 <?php endforeach; ?>
+                                 @foreach ($featuresTable as $label => $vars)
+                                 <li>{!! get_feature($vars[1]) !!}</li>
+                                 @endforeach
                               </ul>
                            </div>
                            <div class="col-md-3 col-3">
                               <ul>
                                  <li class="header">Freelance</li>
-                                 <?php foreach ($featuresTable as $label => $vars): ?>
-                                 <li><?= get_feature($vars[2]) ?></li>
-                                 <?php endforeach; ?>
+                                 @foreach ($featuresTable as $label => $vars)
+                                 <li>{!! get_feature($vars[2]) !!}</li>
+                                 @endforeach
                               </ul>
                            </div>
                            <div class="col-md-3 col-3">
                               <ul>
                                  <li class="header">Outsourcing</li>
-                                 <?php foreach ($featuresTable as $label => $vars): ?>
-                                 <li><?= get_feature($vars[3]) ?></li>
-                                 <?php endforeach; ?>
+                                 @foreach ($featuresTable as $label => $vars)
+                                 <li>{!! get_feature($vars[3]) !!}</li>
+                                 @endforeach
                               </ul>
                            </div>
                         </div>

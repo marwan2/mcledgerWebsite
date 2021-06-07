@@ -100,16 +100,16 @@
    <section id="pricing" class="pricing pt-0">
       <div class="container" data-aos="fade-up">
          <div class="section-title pt-4">
-            <h2>Quality services with more value for less money​</h2>
+            <h2>Quality services with more value for less money</h2>
             <p>
-               Join our community for small business owners who trust us with their book & get a free consultation with our bookkeeping expert​
+               Join our community for small business owners who trust us with their book & get a free consultation with our bookkeeping expert
             </p>
          </div>
          <div class="row d-flex align-items-center">
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                <div class="box pricing_box">
                   <div class="contents">
-                     <h3>REVENUE MANAGEMENT SYSTEM – Invoicing Software​</h3>
+                     <h3>REVENUE MANAGEMENT SYSTEM – Invoicing Software</h3>
                      <h4><sup>AED</sup>249<span> / month + VAT</span></h4>
                      <div class="mt-3 mb-2 text-muted"><small>Package Features</small></div>
                      <ul>
@@ -118,6 +118,9 @@
                         <li>Onboarding - Business/Invoice setup and revenue recognition</li>
                         <li>Tracking and reminders for unpaid invoices</li>
                         <li>Customer payments flexible allocation</li>
+                        <li>VAT returns filing</li>
+                        <li>VAT reports</li>
+                        <li>VAT timeline with filing status & updates</li>
                      </ul>
                      <div class="btn-wrap">
                         <a href="https://portal.mcledger.co/register" class="btn-buy btn-block btn-secondary rad">Start Free Trial Now</a>
@@ -145,7 +148,9 @@
                         <li>Unlimited sales invoice with our Revenue Management System</li>
                         <li>Track payments and receipts with our Revenue Management System</li>
                         <li>Mobile (iOS, Android) and web-based app</li>
-                        <li>Portable accounting department</li>
+                        <li>VAT returns filing</li>
+                        <li>VAT reports</li>
+                        <li>VAT timeline with filing status & updates</li>
                      </ul>
                      <div class="btn-wrap">
                         <a href="https://portal.mcledger.co/register" class="btn-buy btn-block btn-secondary rad">Start Free Trial Now</a>
