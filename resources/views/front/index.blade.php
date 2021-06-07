@@ -435,7 +435,7 @@
               <div class="col-lg-6 col-md-6">
                 <div class="info-box mb-4">
                   <i class="bx bx-phone-call"></i>
-                  <p>+971 56 547 2460 <br> +971 43 42 5577</p>
+                  <p>+971 56 547 2460 <br> +971 4 342 5577</p>
                 </div>
               </div>
             </div>
