@@ -2,7 +2,7 @@
   use App\Faq;
 @endphp
 @extends('front.layouts.master')
-@section('title', 'Frequently Asked Questions')
+@section('title', 'Frequently Asked Questions - ')
 @section('meta_desc', 'Get all your answers about our online accounting application that provides you with bookkeeping, VAT, and invoicing services.')
 @section('meta_keywords', 'free accounting consultation, accounting service in UAE, accounting app for small businesses, VAT registration and filing in dubai, tax advice, professional accountants, accounting and bookkeeping services, VAT services, VAT invoicing ') 
 @section('og_title', 'Frequently Asked Questions')

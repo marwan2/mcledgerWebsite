@@ -1,5 +1,5 @@
 @extends('front.layouts.master')
-@section('title') Blog - Status @endsection
+@section('title') Blog - Status - @endsection
 @section('content')
 <section class="iq-breadcrumb">    
 	<div class="iq-breadcrumb-info">

@@ -1,5 +1,5 @@
 @extends('front.layouts.master')
-@section('title') Privacy Policy @stop
+@section('title') Privacy Policy - @stop
 @section('content')
 <section id="hero" class="d-flex align-items-center terms-hero">
   <div class="container" data-aos="fade-up">

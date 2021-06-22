@@ -1,6 +1,6 @@
 <?php $page_title = 'Work With Us'; ?>
 @extends('front.layouts.master')
-@section('title') {{$page_title}} @endsection
+@section('title') {{$page_title}} - @endsection
 @section('content')
 <section class="iq-breadcrumb">
     <div class="iq-breadcrumb-img">

@@ -6,7 +6,7 @@
     $q = trim(Request::get('q'));
 @endphp
 @extends('front.layouts.master')
-@section('title') Search results of: {{$q}} @endsection
+@section('title') Search results of: {{$q}} - @endsection
 @section('content')
 <section id="hero" class="d-flex align-items-center about-hero blog-hero">
     <div class="blog_hero_bg"></div>
