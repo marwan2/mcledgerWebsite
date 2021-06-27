@@ -6,7 +6,7 @@
   <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>@yield('title') McLedger – Online bookkeeping services for small businesses​</title>
+    <title>@yield('title') McLedger - Online bookkeeping services for small businesses​</title>
     <meta name="description" content="@yield('meta_desc')">
     <meta name="keywords" content="@yield('meta_keywords')">
     <meta property="og:image" content="@yield('meta_img')">

@@ -133,7 +133,7 @@
                   <div class="recommended">recommended</div>
                   <div class="contents">
                      <h3>Standard Bookkeeping</h3>
-                     <h4><sup>AED</sup>749<span> / month + VAT</span></h4>
+                     <h4><span class="starting">Starting from</span> <sup>AED</sup>749<span> / month + VAT</span></h4>
                      <div class="mt-3 mb-2 text-muted"><small>Package Features</small></div>
                      <ul>
                         <li>Onboarding process for new clients during the initial period</li>
