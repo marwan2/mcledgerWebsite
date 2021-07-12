@@ -31,7 +31,7 @@
               <ul>
                 <li {!!Helper::activePage('/')!!}><a href="{{url('/')}}">Home</a></li>
                 <li {!!Helper::activePage('about')!!}><a href="{{url('about')}}">About Us</a></li>
-                <li {!!Helper::activePage('how-it-works')!!}><a href="{{url('how-it-works')}}">How It Work</a></li>
+                <li {!!Helper::activePage('how-it-works')!!}><a href="{{url('how-it-works')}}">How It Works</a></li>
                 <li {!!Helper::activePage('invoicing')!!}><a href="{{url('invoicing')}}">Invoicing</a></li>
                 <li {!!Helper::activePage('pricing')!!}><a href="{{url('pricing')}}">Pricing</a></li>
                 <li {!!Helper::activePage('blog')!!}><a href="{{url('blog')}}">Blog</a></li>
@@ -76,7 +76,7 @@
               <div class="col-lg-3 col-md-6 footer-links">
                 <h4>How it Works</h4>
                 <ul>
-                  <li><i class="bx bx-chevron-right"></i> <a href="{{url('how-it-works')}}">How is works?</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="{{url('how-it-works')}}">How it Works?</a></li>
                   <li><i class="bx bx-chevron-right"></i> <a href="{{url('how-it-works')}}">Why us?</a></li>
                   <li><i class="bx bx-chevron-right"></i> <a href="{{url('faq')}}">FAQ</a></li>
                   <li><i class="bx bx-chevron-right"></i> <a href="{{url('contact')}}">Contact Us</a></li>

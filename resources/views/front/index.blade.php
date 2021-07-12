@@ -125,7 +125,7 @@
           <div class="card-deck p-2 apps_card_down">
             <div class="card rounded-lg p-4">
               <a href="{{url('invoicing')}}">
-                <img src="assets/img/feature1.png" class="card-img-top" alt="MCLEDGER REVENUE MANAGEMENT SYSTEM">
+                <img src="assets/img/invoicing_home_promo2.jpg" class="card-img-top" alt="MCLEDGER REVENUE MANAGEMENT SYSTEM">
               </a>
               <div class="card-body">
                 <h5 class="card-title">MCLEDGER REVENUE MANAGEMENT SYSTEM</h5>
