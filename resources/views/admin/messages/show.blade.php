@@ -3,33 +3,29 @@
     $default_subject = 'رد على الرسالة: ' . $message->subject;
 ?>
 @extends('admin.layouts.master')
-@section('title') الرسائل > {{$message->subject}} @endsection
+@section('title') Messages > {{$message->subject}} @endsection
 @section('content')
 
     <section class="content-header">
-      <h1>الرسائل</h1>
+      <h1>Messages</h1>
       <ol class="breadcrumb">
-        <li><a href="{{url('admin')}}"> الرئيسية</a></li>
-        <li><a href="{{url('admin/messages')}}">الرسائل</a></li>
-        <li><a href="#">عرض رسالة</a></li>
+        <li><a href="{{url('admin')}}"> Home</a></li>
+        <li><a href="{{url('admin/messages')}}">Messages</a></li>
+        <li><a href="#">View message</a></li>
       </ol>
     </section>
     <section class="content">
-      <div class="box">
-        <div class="box-header with-border">
-          <h3 class="box-title">عرض الرسالة من: {{ $message->name }}</h3>
-          <div class="box-tools pull-right">
-            <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="إغلاق">
-              <i class="fa fa-minus"></i></button>
-          </div>
+      <div class="card">
+        <div class="card-header with-border">
+          <h3 class="card-title">View message from: {{ $message->name }}</h3>
         </div>
-        <div class="box-body">
+        <div class="card-body">
             {!! Form::open([
                 'method'=>'DELETE',
                 'url' => ['admin/messages', $message->id],
                 'style' => 'display:inline'
             ]) !!}
-                {!! Form::button('<span class="fa fa-trash" aria-hidden="true"/> Delete', array(
+                {!! Form::button('<i class="fa fa-trash-alt" aria-hidden="true"></i> Delete', array(
                         'type' => 'submit',
                         'class' => 'btn btn-danger btn-sm',
                         'title' => 'Delete Message',
@@ -40,22 +36,22 @@
             <br/>
 
             <div class="table-responsive">
-                <table class="table table-bordered table-striped table-hover" style="direction: rtl;">
+                <table class="table table-bordered table-striped table-hover">
                     <tbody>
-                        <tr><th style="width:140px;">رقم</th><td>{{ $message->id }}</td></tr>
-                        <tr><th>التاريخ</th><td>{{ $message->created_at }} ({{Carbon\Carbon::parse($message->created_at)->diffForHumans()}})</td></tr>
-                        <tr><th> اسم مرسل الرسالة </th><td> {{ $message->name }} </td></tr>
-                        <tr><th> البريد </th><td> <a href="mailto:{{$message->email}}">{{$message->email}}</a></td></tr>
-                        <tr><th> عنوان الرسالة </th><td> {{ $message->subject }} </td></tr>
-                        <tr><th> نص الرسالة</th><td> {!! $message->message !!} </td></tr>
-                        <tr><th> تم الرد </th><td><strong>{!!Helper::sw($message,'replied','Message')!!}
+                        <tr><th style="width:140px;">ID</th><td>{{ $message->id }}</td></tr>
+                        <tr><th>Date</th><td>{{ $message->created_at }} ({{Carbon\Carbon::parse($message->created_at)->diffForHumans()}})</td></tr>
+                        <tr><th> Name </th><td> {{ $message->name }} </td></tr>
+                        <tr><th> Email </th><td> <a href="mailto:{{$message->email}}">{{$message->email}}</a></td></tr>
+                        <tr><th> Subject </th><td> {{ $message->subject }} </td></tr>
+                        <tr><th> Message</th><td> {!! $message->message !!} </td></tr>
+                        <tr><th> Replied </th><td><strong>{!!Helper::sw($message,'replied','Message')!!}
                         </strong>
                         </td></tr>
                     </tbody>
                 </table>
             </div>
             <a name="replies"></a>
-            <div class="well">
+            <div class="well d-none">
                 <div class="row">
                     <div class="col-md-12">
                         <legend>الردود المرسلة من إدارة الموقع</legend>
@@ -83,7 +79,7 @@
                 </div>
             </div>
             <a name="addreply"></a>
-            <div class="well">
+            <div class="well d-none">
                 <div class="row">
                     <div class="col-md-12">
                         <legend>اضافة رد</legend>
@@ -115,7 +111,7 @@
                                         @else
                                             {!!Form::checkbox('goto_inbox', 1, false, ['disabled'=>'disabled'])!!}
                                         @endif
-                                        إرسال إلى صندوق الرسائل بالموقع </label>
+                                        إرسال إلى صندوق Messages بالموقع </label>
                                     </div>
 
                                      @if($user)
@@ -141,8 +137,8 @@
             </div>
         </div>
 
-        <div class="box-footer">
-            <a href="{!!url('admin/messages')!!}" class="btn btn-light">العودة</a>
+        <div class="card-footer">
+            <a href="{!!url('admin/messages')!!}" class="btn btn-light">Go back</a>
         </div>
     </div>
 @endsection

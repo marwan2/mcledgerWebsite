@@ -77,7 +77,7 @@
                 <h6 class="dropdown-header">
                   Notifications
                 </h6>
-                <a class="dropdown-item text-center small text-gray-500" href="#">@lang('site.all_notific')</a>
+                <a class="dropdown-item text-center small text-gray-500" href="#">@lang('Notifications')</a>
               </div>
             </li>
             <div class="topbar-divider d-none d-sm-block"></div>
@@ -98,13 +98,13 @@
                 <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
                     @if(auth()->user()->role == 'admin')
                     	<a class="dropdown-item" href="{{ url('admin/users') }}">
-                    		<i class="fas fa-user fa-sm fa-fw ml-2 text-gray-400"></i>@lang('site.accounts')
+                    		<i class="fas fa-user fa-sm fa-fw ml-2 text-gray-400"></i>@lang('Accounts')
                     	</a>
                     @endif
                 	<div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="{{ route('logout') }}"
                        onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                        <i class="fas fa-sign-out-alt fa-sm fa-fw ml-2 text-gray-400"></i> @lang('site.logout')
+                        <i class="fas fa-sign-out-alt fa-sm fa-fw ml-2 text-gray-400"></i> @lang('Logout')
                     </a>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;"> @csrf </form>
                 </div>

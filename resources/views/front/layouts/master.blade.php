@@ -20,6 +20,7 @@
     <link href="{{url('assets/vendor/venobox/venobox.css')}}" rel="stylesheet">
     <link href="{{url('assets/vendor/aos/aos.css')}}" rel="stylesheet">
     <link href="{{url('assets/css/style.css')}}" rel="stylesheet">
+    @yield('styles')
   </head>
   <body>
     <header id="header" class="fixed-top">

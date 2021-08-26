@@ -32,6 +32,7 @@ h1,h2,h3,h4,h5,h6, .btn-light{font-family:MontBold,sans-serif}
 .pricing-hero:before { content: unset !important; }
 .hero-img:before { content: ''; width: 148px; height: 130px; background:url(../img/privacy.png) right center no-repeat;background-size:contain;position:absolute;right: 8%; bottom: 22%; z-index: 3; }
 #hero.home-hero h1 { font-size: 28px; line-height: 36px;  }
+#hero.job_apps_hero:before{content:'';background:url(../img/note_paper.png) right center no-repeat !important;position:absolute;right:0;width:218px;height:230px;background-size:contain !important;top:8%}
 @-webkit-keyframes animate-preloader {
 0%{transform:rotate(0deg)}
 100%{transform:rotate(360deg)}

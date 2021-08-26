@@ -7,23 +7,21 @@
 @section('content')
     <section class="content-header">
       <h1>Admins</h1>
-      <ol class="breadcrumb">
-        <li><a href="{{url('admin')}}"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-        <li><a href="{{url('admin/users')}}">Admins</a></li>
-      </ol>
+      <nav rel="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{url('admin')}}"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+            <li class="breadcrumb-item"><a href="{{url('admin/users')}}">Admins</a></li>
+          </ol>
+      </nav>
     </section>
     <section class="content">
-      <div class="box">
-        <div class="box-header with-border">
-          <div class="box-title"><a href="{{ url('admin/users/create') }}" class="btn btn-primary"><i class="fa fa-plus"></i> New admin user</a></div>
-          <div class="box-tools pull-right">
-            <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="إغلاق">
-              <i class="fa fa-minus"></i></button>
-          </div>
+      <div class="card">
+        <div class="card-header with-border">
+          <div class="card-title"><a href="{{ url('admin/users/create') }}" class="btn btn-primary"><i class="fa fa-plus"></i> New admin user</a></div>
         </div>
-        <div class="box-body">
+        <div class="card-body">
             <div class="table">
-                <table class="table table-borderless dataTable">
+                <table class="table table-bordered table-striped">
                     <thead>
                         <tr>
                             <th>ID</th>
@@ -45,16 +43,16 @@
                             <td>{{ $item->email }}</td>
                             <td>*****</td>
                             <td>
-                                <a href="{{ url('admin/users/' . $item->id) }}" class="btn btn-success btn-sm" title="View"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"/></a>
-                                <a href="{{ url('admin/users/' . $item->id . '/edit') }}" class="btn btn-primary btn-sm" title="Edit"><span class="fa fa-pencil" aria-hidden="true"/></a>
+                                <a href="{{ url('admin/users/' . $item->id) }}" class="btn btn-success" title="View"><span class="fa fa-eye" aria-hidden="true"/></a>
+                                <a href="{{ url('admin/users/' . $item->id . '/edit') }}" class="btn btn-primary" title="Edit"><i class="fa fa-pen" aria-hidden="true"></i></a>
                                 {!! Form::open([
                                     'method'=>'DELETE',
                                     'url' => ['/admin/users', $item->id],
                                     'style' => 'display:inline'
                                 ]) !!}
-                                    {!! Form::button('<span class="fa fa-trash-o" aria-hidden="true" title="Delete" />', array(
+                                    {!! Form::button('<span class="fa fa-trash-alt" aria-hidden="true" title="Delete" />', array(
                                         'type' => 'submit',
-                                        'class' => 'btn btn-danger btn-sm',
+                                        'class' => 'btn btn-danger',
                                         'title' => 'Delete',
                                         'onclick'=>'return confirm("Delete account: Are you sure?")'
                                     )) !!}

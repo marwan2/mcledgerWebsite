@@ -391,15 +391,15 @@ class Helper extends Model
         $iup_name = $item->updated_by->name ?? '';
 
         $output = '
-        مضاف بواسطة:  '.$iu_name.' <br>
-        آخر تحديث بواسطة: '.$iup_name.' <br>
-        تاريخ اﻻضافة: '.self::date_ft($item->created_at).' <br>
-        آخر تحديث: '.self::since($item->updated_at).' 
+        Added by:  '.$iu_name.' <br>
+        Updated by: '.$iup_name.' <br>
+        Created in: '.self::date_ft($item->created_at).' <br>
+        Updated in: '.self::since($item->updated_at).' 
         ';
 
         return '<a class="btn btn-light popover_anchor" tabindex="0" role="button"
          data-trigger="focus" data-toggle="popover" 
-         data-title="معلومات المستخدم"
+         data-title="Record info."
          data-html="true"
          data-placement="top" data-content="'.$output.'"><i class="fa fa-info"></i></a>';
     }
@@ -568,5 +568,4 @@ class Helper extends Model
     public static function metaImage($img) {
         return (isset($img) && !empty($img)) ? url('uploads/'.$img) : '';
     }
-
 }

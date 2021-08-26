@@ -27,6 +27,7 @@ class Settings extends Model
         'blog_comments'=>'Blog Comments',
         'messages'=>'Messages',
         //'compose'=>'Send Messages',
+        'job-applications'=>'Job Applications',
         'subscribers'=>'Subscribers',
         'users'=>'Users',
         'settings'=>'Settings',

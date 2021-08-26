@@ -25,7 +25,7 @@
                 'url' => ['admin/users', $user->id],
                 'style' => 'display:inline'
             ]) !!}
-                {!! Form::button('<span class="glyphicon glyphicon-trash" aria-hidden="true"/>', array(
+                {!! Form::button('<span class="fa fa-trash-alt" aria-hidden="true"/>', array(
                     'type' => 'submit',
                     'class' => 'btn btn-danger',
                     'title' => 'Delete User',

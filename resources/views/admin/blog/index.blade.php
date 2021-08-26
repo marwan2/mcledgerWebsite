@@ -49,7 +49,7 @@
                             <td><a href="{{url('admin/blog/'.$item->id.'/edit')}}">
                                 <strong>{{$item->title}}</strong></a>
                                 <br>
-                                <span class="text-danger"><i class="fa fa-thumbs-o-up"></i> {{$item->likes}}</span>
+                                <span class="text-danger" title="Likes"><i class="fa fa-thumbs-o-up"></i> {{$item->likes}}</span>
                             </td>
                             <td>{{ Str::limit(strip_tags($item->details, 100)) }}</td>
                             <td>{!!Helper::image($item->image,['width'=>80])!!}</td>

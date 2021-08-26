@@ -10,8 +10,8 @@
             <small>(Total: {{$subscribers->count()}})</small>
         </h1>
       <ol class="breadcrumb">
-        <li><a href="{{url('admin')}}"> Dashboard</a></li>
-        <li><a href="{{url('admin/subscribers')}}">{{$page_title}}</a></li>
+        <li class="breadcrumb-item"><a href="{{url('admin')}}"> Dashboard</a></li>
+        <li class="breadcrumb-item"><a href="{{url('admin/subscribers')}}">{{$page_title}}</a></li>
       </ol>
     </section>
     <section class="content">
@@ -44,7 +44,7 @@
                                     'url' => ['admin/subscribers', $item->id],
                                     'style' => 'display:inline'
                                 ]) !!}
-                                    {!! Form::button('<span class="fa fa-trash-o" aria-hidden="true" title="Delete" />', array(
+                                    {!! Form::button('<span class="fa fa-trash-alt" aria-hidden="true" title="Delete" />', array(
                                             'type' => 'submit',
                                             'class' => 'btn btn-danger btn-sm',
                                             'title' => 'Delete Message',

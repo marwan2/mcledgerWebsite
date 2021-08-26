@@ -123,7 +123,7 @@ class SettingsController extends InitController
             }
         }
 
-        Session::flash('flash_message', 'تم تغيير كلمة المرور بنجاح');
+        Session::flash('flash_message', 'Password has been changed successfully');
         return Redirect::back();
     }
 

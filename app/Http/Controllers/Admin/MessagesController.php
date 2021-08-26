@@ -83,7 +83,7 @@ class MessagesController extends InitController
     public function destroy($id)
     {
         Message::destroy($id);
-        Session::flash('flash_message', 'تم حذف الرسالة بنجاح');
+        Session::flash('flash_message', 'Record has been deleted');
         return redirect('admin/messages');
     }
 }

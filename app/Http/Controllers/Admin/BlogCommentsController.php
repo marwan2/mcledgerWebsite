@@ -78,7 +78,7 @@ class BlogCommentsController extends InitController
         $comment = BlogComment::findOrFail($id);
         BlogComment::destroy($id);
 
-        Session::flash('flash_message', 'تم حذف الصفحة بنجاح');
+        Session::flash('flash_message', 'Record deleted');
         return redirect('admin/blog_comments');
     }
 }

@@ -16,12 +16,14 @@ Route::group(['prefix'=>'admin', 'namespace'=>'Admin', 'middleware'=>['auth', 'a
 	Route::resource('quickadd', 'QuickAddController');
 	Route::resource('messages', 'MessagesController');
 	Route::resource('join_requests', 'JoinRequestsController');
+	Route::resource('job-applications', 'JobApplicationsController');
 	
 	Route::post('settings/upload', 'SettingsController@postUpload');
 	Route::post('settings/save', 'SettingsController@postSave');
 	Route::get('settings/switch-boolean', 'SettingsController@getSwitchBoolean');
 	Route::get('settings/delete-logo', 'SettingsController@getDeleteLogo');
 	Route::get('settings', 'SettingsController@getIndex');
+	Route::post('settings/changepassword', 'SettingsController@postChangepassword');
 	
 	Route::get('compose', 'ComposeController@index');
 	Route::get('compose/new', 'ComposeController@getNew');
@@ -69,6 +71,14 @@ Route::group(['prefix' => '/', 'namespace'=>'Front'], function() {
 	Route::get('signup', 'HomeController@signup');
 	Route::get('join', 'HomeController@joinAsClient');
 
+	Route::get('job-application', 'JobsController@apply');
+	Route::post('job-application', 'JobsController@saveApplication');
+	Route::get('application-status', 'JobsController@applicationStatus');
+
+	Route::get('/jobapp/preview/{id}', function ($id) {
+	    $app = \App\JobApplication::findOrFail($id);
+    	return new \App\Mail\JobApplicationReceived($app);
+	});
     Route::get('home', 'HomeController@index');
     Route::get('/', 'HomeController@index');
 });
